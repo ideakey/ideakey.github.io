@@ -5,4 +5,16 @@ body {
   word-break: break-all; }
 
 /*리누 기본 CSS*/
+.mkt2_budget tbody tr td {
+  text-align: right; }
+  .mkt2_budget tbody tr td:nth-child(1), .mkt2_budget tbody tr td:nth-child(2), .mkt2_budget tbody tr td:nth-child(4), .mkt2_budget tbody tr td:nth-child(7) {
+    text-align: center; }
+  .mkt2_budget tbody tr td:nth-child(3) {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    width: 100px; }
+
 /* */

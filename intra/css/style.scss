@@ -5,8 +5,33 @@ body {
     word-break: break-all;
 }
 /*리누 기본 CSS*/
+$c: center;
+$r: right;
 
 
+.mkt2_budget {
+  tbody {
+    tr {
+      td {
+        text-align: $r;
+        &:nth-child(1), // no
+        &:nth-child(2), // id
+        &:nth-child(4), // 담당자
+        &:nth-child(7) { //예상소진일
+          text-align: $c;
+        }
+        &:nth-child(3) { // 계정명
+          display: block;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          text-align: left;
+          width: 100px;
+        }
+      }
+    }
+  }
+}
 
 
 
