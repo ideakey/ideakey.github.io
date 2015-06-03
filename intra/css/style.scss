@@ -9,7 +9,33 @@ $c: center;
 $r: right;
 $l: left;
 
+.mkt2_budget {
+  tbody {
+    tr {
+      overflow: hidden;
+      td {
+        text-align: $r;
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(7) {
+          text-align: $c;
+        }
+        /* &:nth-child(2), */
+        &:nth-child(3) {
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          /* text-align: $l; */
+          width: 100px;
 
+        }
+
+      }
+    }
+  }
+}
 
 
 
