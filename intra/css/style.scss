@@ -4,15 +4,60 @@ body {
     font-family: 'Noto Sans', 'Nanum Gothic', sans-serif;
     word-break: break-all;
 }
+.border {
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
 /*리누 기본 CSS*/
 $c: center;
 $r: right;
 $l: left;
 
+.tb {
+  display: table-cell;
+  .table_head {
+    thead {
+      tr {
+        th {
+          text-align: $c;
+          &:nth-child(2),
+          &:nth-child(3) {
+            width: 100px;
+          }
+        } // th
+      } // tr
+    } // thead
+    tbody {
+      tr {
+        td {
+          text-align: $r;
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(4),
+          &:nth-child(7),
+          &:nth-child(8) {
+            text-align: $c;
+          }
+          &:nth-child(2),
+          &:nth-child(3) {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 100px;
+          }
+
+        }// td
+      } // tr
+    } // tbody
+  } // table_head
+} // tb
+
+
+
+
 .mkt2_budget {
   tbody {
     tr {
-      overflow: hidden;
       td {
         text-align: $r;
         &:nth-child(1),
