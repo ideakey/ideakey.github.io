@@ -25,13 +25,11 @@ $l: left;
         &:nth-child(7) {
           text-align: $c;
         }
-        /* &:nth-child(2), */
         &:nth-child(3) {
           display: inline-block;
           overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
-          /* text-align: $l; */
           width: 100px;
 
         }
@@ -43,64 +41,7 @@ $l: left;
 
 
 
-
-
-
-
-
-
-
-.tb {
-  .table_head {
-    thead {
-      tr {
-        th {
-          text-align: $c;
-          &:nth-child(2),
-          &:nth-child(3) {
-            width: 100px;
-          }
-        } // th
-      } // tr
-    } // thead
-    tbody {
-      tr {
-        td {
-          text-align: $r;
-          &:nth-child(1),
-          &:nth-child(2),
-          &:nth-child(4),
-          &:nth-child(7),
-          &:nth-child(8) {
-            text-align: $c;
-            white-space: nowrap;
-            word-break: keep-all;
-          }
-          /* &:nth-child(2), */
-          &:nth-child(3) {
-            display: block;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            width: 100px;
-          }
-
-        }// td
-      } // tr
-    } // tbody
-  } // table_head
-
-} // tb
-
-
-
-
-
-
-
-
 .test3 {
-  /* border: 1px solid #333; */
   width: 40%;
   overflow-x: auto;
   table {
@@ -129,6 +70,7 @@ $l: left;
     } // thead
 
     tbody {
+      background: #fff;
       tr {
         td {
           text-align: $r;

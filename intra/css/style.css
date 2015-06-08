@@ -10,8 +10,7 @@ body {
 
 /*리누 기본 CSS*/
 .mkt2_budget tbody tr td {
-  text-align: right;
-  /* &:nth-child(2), */ }
+  text-align: right; }
   .mkt2_budget tbody tr td:nth-child(1), .mkt2_budget tbody tr td:nth-child(2), .mkt2_budget tbody tr td:nth-child(4), .mkt2_budget tbody tr td:nth-child(7) {
     text-align: center; }
   .mkt2_budget tbody tr td:nth-child(3) {
@@ -19,29 +18,9 @@ body {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    /* text-align: $l; */
-    width: 100px; }
-
-.tb .table_head thead tr th {
-  text-align: center; }
-  .tb .table_head thead tr th:nth-child(2), .tb .table_head thead tr th:nth-child(3) {
-    width: 100px; }
-.tb .table_head tbody tr td {
-  text-align: right;
-  /* &:nth-child(2), */ }
-  .tb .table_head tbody tr td:nth-child(1), .tb .table_head tbody tr td:nth-child(2), .tb .table_head tbody tr td:nth-child(4), .tb .table_head tbody tr td:nth-child(7), .tb .table_head tbody tr td:nth-child(8) {
-    text-align: center;
-    white-space: nowrap;
-    word-break: keep-all; }
-  .tb .table_head tbody tr td:nth-child(3) {
-    display: block;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     width: 100px; }
 
 .test3 {
-  /* border: 1px solid #333; */
   width: 40%;
   overflow-x: auto; }
   .test3 table {
@@ -59,18 +38,20 @@ body {
       background: #fff; }
       .box .table_head thead tr th {
         text-align: center; }
-    .box .table_head tbody tr td {
-      text-align: right; }
-      .box .table_head tbody tr td:nth-child(1), .box .table_head tbody tr td:nth-child(2), .box .table_head tbody tr td:nth-child(4), .box .table_head tbody tr td:nth-child(7), .box .table_head tbody tr td:nth-child(8) {
-        text-align: center;
-        white-space: nowrap;
-        word-break: keep-all; }
-      .box .table_head tbody tr td:nth-child(3) {
-        display: block;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        width: 100px; }
+    .box .table_head tbody {
+      background: #fff; }
+      .box .table_head tbody tr td {
+        text-align: right; }
+        .box .table_head tbody tr td:nth-child(1), .box .table_head tbody tr td:nth-child(2), .box .table_head tbody tr td:nth-child(4), .box .table_head tbody tr td:nth-child(7), .box .table_head tbody tr td:nth-child(8) {
+          text-align: center;
+          white-space: nowrap;
+          word-break: keep-all; }
+        .box .table_head tbody tr td:nth-child(3) {
+          display: block;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          width: 100px; }
   .box .table_body {
     position: absolute;
     top: 0;
