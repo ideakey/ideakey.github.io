@@ -13,47 +13,6 @@ $c: center;
 $r: right;
 $l: left;
 
-.tb {
-  display: table-cell;
-  .table_head {
-    thead {
-      tr {
-        th {
-          text-align: $c;
-          &:nth-child(2),
-          &:nth-child(3) {
-            width: 100px;
-          }
-        } // th
-      } // tr
-    } // thead
-    tbody {
-      tr {
-        td {
-          text-align: $r;
-          &:nth-child(1),
-          &:nth-child(2),
-          &:nth-child(4),
-          &:nth-child(7),
-          &:nth-child(8) {
-            text-align: $c;
-          }
-          &:nth-child(2),
-          &:nth-child(3) {
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            width: 100px;
-          }
-
-        }// td
-      } // tr
-    } // tbody
-  } // table_head
-} // tb
-
-
-
 
 .mkt2_budget {
   tbody {
@@ -85,6 +44,128 @@ $l: left;
 
 
 
+
+
+
+
+
+
+.tb {
+  .table_head {
+    thead {
+      tr {
+        th {
+          text-align: $c;
+          &:nth-child(2),
+          &:nth-child(3) {
+            width: 100px;
+          }
+        } // th
+      } // tr
+    } // thead
+    tbody {
+      tr {
+        td {
+          text-align: $r;
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(4),
+          &:nth-child(7),
+          &:nth-child(8) {
+            text-align: $c;
+            white-space: nowrap;
+            word-break: keep-all;
+          }
+          /* &:nth-child(2), */
+          &:nth-child(3) {
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 100px;
+          }
+
+        }// td
+      } // tr
+    } // tbody
+  } // table_head
+
+} // tb
+
+
+
+
+
+
+
+
+.test3 {
+  /* border: 1px solid #333; */
+  width: 40%;
+  overflow-x: auto;
+  table {
+    width: 800px;
+  }
+}
+
+
+.box {
+  position: relative;
+
+  .table_head {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 600px;
+    z-index: 1;
+
+    thead {
+      background: #fff;
+      tr {
+        th {
+          text-align: $c;
+        } // th
+      } // tr
+    } // thead
+
+    tbody {
+      tr {
+        td {
+          text-align: $r;
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(4),
+          &:nth-child(7),
+          &:nth-child(8) {
+            text-align: $c;
+            white-space: nowrap;
+            word-break: keep-all;
+          }
+          &:nth-child(3) {
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 100px;
+          }
+        }// td
+      } // tr
+    } // tbody
+
+  } // .table_head
+
+  .table_body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow-x: auto;
+
+    table {
+      width: 800px;
+    }
+  } // .table_body
+
+} // .box
 
 
 
