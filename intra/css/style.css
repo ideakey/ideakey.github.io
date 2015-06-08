@@ -20,12 +20,6 @@ body {
     text-overflow: ellipsis;
     width: 100px; }
 
-.test3 {
-  width: 40%;
-  overflow-x: auto; }
-  .test3 table {
-    width: 800px; }
-
 .box {
   position: relative; }
   .box .table_head {
@@ -56,8 +50,13 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    overflow-x: auto; }
+    overflow: auto; }
     .box .table_body table {
       width: 800px; }
+
+.table_fix {
+  position: relative; }
+  .table_fix .td_fix {
+    position: absolute; }
 
 /* */
