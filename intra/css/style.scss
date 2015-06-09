@@ -4,11 +4,40 @@ body {
     font-family: 'Noto Sans', 'Nanum Gothic', sans-serif;
     word-break: break-all;
 }
+
+
 .border {
   border: 1px solid #333;
   box-sizing: border-box;
 }
-/*리누 기본 CSS*/
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- 기본 항목 ----------------------------- */
+
+
+.pagination {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $c: center;
 $r: right;
 $l: left;

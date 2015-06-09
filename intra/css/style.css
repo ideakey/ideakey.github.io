@@ -8,7 +8,14 @@ body {
   border: 1px solid #333;
   box-sizing: border-box; }
 
-/*리누 기본 CSS*/
+ul, li {
+  margin: 0;
+  padding: 0; }
+
+/* ---- 기본 항목 ----------------------------- */
+.pagination {
+  margin: 0; }
+
 .mkt2_budget tbody tr td {
   text-align: right; }
   .mkt2_budget tbody tr td:nth-child(1), .mkt2_budget tbody tr td:nth-child(2), .mkt2_budget tbody tr td:nth-child(4), .mkt2_budget tbody tr td:nth-child(7) {
