@@ -20,11 +20,11 @@ var factory = function( $, DataTable ) {
 $.extend( true, DataTable.defaults, {
 	dom:
 		"<'DataTable_length_box'l><'dataTables_filter_box'f>" +
-		"<'row'<'col-sm-12'tr>>" +
+		"<'row'<'col-xs-12'tr>>" +
 		"<'row'<'col-xs-12'p>>",
 	renderer: 'bootstrap'
 } );
-
+// 원본 // 백창인  20150609 수정
 // $.extend( true, DataTable.defaults, {
 // 	dom:
 // 		"<'row'<'col-sm-6'l><'col-sm-6'f>>" +

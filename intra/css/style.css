@@ -15,17 +15,17 @@ ul, li {
 /* ---- 기본 항목 ----------------------------- */
 .DataTable {
   position: relative; }
-  .DataTable #DataTable {
-    margin-top: -5px; }
+  .DataTable .col-xs-12 {
+    margin-top: -6px; }
   .DataTable .DataTable_length_box {
     position: absolute;
     bottom: 0;
-    left: 10px;
+    left: 5px;
     z-index: 1; }
   .DataTable .dataTables_filter_box {
     position: absolute;
     bottom: 0;
-    right: 10px;
+    right: 5px;
     z-index: 1; }
   .DataTable .dataTables_paginate.paging_simple_numbers {
     margin: 0 auto;

@@ -21,19 +21,19 @@ ul, li {
 
 .DataTable {
   position: relative;
-  #DataTable {
-    margin-top:-5px;
+  .col-xs-12 {
+    margin-top:-6px;
   }
   .DataTable_length_box {
     position: absolute;
     bottom: 0;
-    left: 10px;
+    left: 5px;
     z-index: 1;
   }
   .dataTables_filter_box {
     position: absolute;
     bottom: 0;
-    right: 10px;
+    right: 5px;
     z-index: 1;
   }
   .dataTables_paginate.paging_simple_numbers {
