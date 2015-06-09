@@ -25,16 +25,17 @@ ul, li {
 
 .DataTable {
   position: relative;
-  border: 1px solid #333;
   .DataTable_length_box {
     position: absolute;
     bottom: 0;
     left: 10px;
+    z-index: 1;
   }
   .dataTables_filter_box {
     position: absolute;
     bottom: 0;
     right: 10px;
+    z-index: 1;
   }
   .dataTables_paginate.paging_simple_numbers {
     margin: 0 auto;
