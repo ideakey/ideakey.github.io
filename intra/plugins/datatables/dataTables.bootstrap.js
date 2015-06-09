@@ -19,7 +19,7 @@ var factory = function( $, DataTable ) {
 /* Set the defaults for DataTables initialisation */
 $.extend( true, DataTable.defaults, {
 	dom:
-		"<'row'<'DataTable_length_box'l><'dataTables_filter_box'f>>" +
+		"<'DataTable_length_box'l><'dataTables_filter_box'f>" +
 		"<'row'<'col-sm-12'tr>>" +
 		"<'row'<'col-xs-12'p>>",
 	renderer: 'bootstrap'

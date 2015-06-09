@@ -13,11 +13,10 @@ ul, li {
   padding: 0; }
 
 /* ---- 기본 항목 ----------------------------- */
-.pagination {
-  margin: 0; }
-
 .DataTable {
   position: relative; }
+  .DataTable #DataTable {
+    margin-top: -5px; }
   .DataTable .DataTable_length_box {
     position: absolute;
     bottom: 0;

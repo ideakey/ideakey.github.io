@@ -19,12 +19,11 @@ ul, li {
 /* ---- 기본 항목 ----------------------------- */
 
 
-.pagination {
-  margin: 0;
-}
-
 .DataTable {
   position: relative;
+  #DataTable {
+    margin-top:-5px;
+  }
   .DataTable_length_box {
     position: absolute;
     bottom: 0;
