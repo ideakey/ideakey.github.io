@@ -19,28 +19,32 @@ ul, li {
 /* ---- 기본 항목 ----------------------------- */
 
 
+/* 데이터 테이블 관련 */
 .DataTable {
   position: relative;
   .col-xs-12 {
     margin-top:-6px;
   }
   .DataTable_length_box {
+    //리스트 출력 갯수
     position: absolute;
     bottom: 0;
     left: 5px;
     z-index: 1;
   }
   .dataTables_filter_box {
+    // 검색창
     position: absolute;
     bottom: 0;
     right: 5px;
     z-index: 1;
   }
   .dataTables_paginate.paging_simple_numbers {
+    // 페이징
     margin: 0 auto;
     text-align: center;
   }
-}
+} //.DataTable
 
 
 

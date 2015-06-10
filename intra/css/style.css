@@ -13,6 +13,7 @@ ul, li {
   padding: 0; }
 
 /* ---- 기본 항목 ----------------------------- */
+/* 데이터 테이블 관련 */
 .DataTable {
   position: relative; }
   .DataTable .col-xs-12 {
