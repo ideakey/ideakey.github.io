@@ -31,6 +31,7 @@ a {
 [data-tips] {
 	position: relative;
 	text-decoration: none;
+  cursor: pointer;
 }
 
 	[data-tips]:after,
@@ -215,8 +216,60 @@ a {
 
 /* 아이콘 컬러 */
 i.red {
-  color:red;
+  color:#f56954;
 }
+
+/* 광고주 리스트 커스텀 */
+
+.client_list {
+  table {
+    tbody {
+      tr {
+        td {
+          &:nth-child(6) {
+            text-align: left;
+          }
+/*           &:nth-child(3) {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 130px;
+}
+ */        } // td
+      } // tr
+    } // tbody
+  } // table
+} // .client_list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
