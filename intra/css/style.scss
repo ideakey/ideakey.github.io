@@ -226,17 +226,11 @@ i.red {
     tbody {
       tr {
         td {
+          &:nth-child(3),
           &:nth-child(6) {
             text-align: left;
           }
-/*           &:nth-child(3) {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 130px;
-}
- */        } // td
+        } // td
       } // tr
     } // tbody
   } // table
