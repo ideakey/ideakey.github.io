@@ -262,11 +262,18 @@ i.red {
 
 .ofx {
   overflow-x: scroll;
+  overflow-y: hidden;
+  margin-bottom: 15px;
+  width: 100%;
   table {
-    width: 100% !important ;
+    /* width: 100% !important  */;
     th, td {
       white-space: nowrap;
     }
+  }
+  .DataTables_filter_box,
+  .DataTable_length_box {
+    bottom: 15px;
   }
 }
 
@@ -301,37 +308,13 @@ i.red {
 
 
 
-/*
+
 
 $c: center;
 $r: right;
 $l: left;
 
 
-.mkt2_budget {
-  tbody {
-    tr {
-      td {
-        text-align: $r;
-        &:nth-child(1),
-        &:nth-child(2),
-        &:nth-child(4),
-        &:nth-child(7) {
-          text-align: $c;
-        }
-        &:nth-child(3) {
-          display: inline-block;
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          width: 100px;
-
-        }
-
-      }
-    }
-  }
-}
 
 
 .box {
@@ -393,17 +376,6 @@ $l: left;
   } // .table_body
 
 } // .box
-
-
-.table_fix {
-  position: relative;
-
-  .td_fix {
-    position: absolute;
-  }
-}
-
- */
 
 
 
