@@ -160,18 +160,19 @@ a {
     bottom: 2px;
     right: 5px;
     z-index: 1; }
+  .DataTable .DT-lengthMenu {
+    width: 70px;
+    text-align: center; }
   .DataTable .DataTables_filter_box {
     position: absolute;
     bottom: 2px;
-    right: 105px;
+    right: 130px;
     z-index: 1; }
   .DataTable .dataTables_paginate {
     text-align: left;
     margin: 5px 0 -2px 5px; }
   .DataTable table th, .DataTable table td {
     text-align: center; }
-  .DataTable .DT-lengthMenu {
-    width: 80px; }
 
 /* 아이콘 컬러 */
 i.red {

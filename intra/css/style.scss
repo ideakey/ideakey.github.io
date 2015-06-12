@@ -196,11 +196,16 @@ a {
     right: 5px;
     z-index: 1;
   }
+  .DT-lengthMenu {
+    // 실제 리스트 숫자표시 부분
+    width: 70px;
+    text-align: center;
+  }
   .DataTables_filter_box {
     // 검색창
     position: absolute;
     bottom: 2px;
-    right: 105px;
+    right: 130px;
     z-index: 1;
   }
   .dataTables_paginate {
@@ -212,9 +217,7 @@ a {
       text-align: center;
     }
   }
-  .DT-lengthMenu {
-    width: 80px;
-  }
+
 } //.DataTable
 
 /* 아이콘 컬러 */
