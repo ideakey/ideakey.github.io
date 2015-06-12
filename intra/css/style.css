@@ -179,8 +179,10 @@ i.red {
   color: #f56954; }
 
 /* 광고주 리스트 커스텀 */
-.client_list table tbody tr td:nth-child(3), .client_list table tbody tr td:nth-child(6) {
-  text-align: left; }
+.client_list table tbody tr td:nth-child(3), .client_list table tbody tr td:nth-child(6) { text-align: left; }
+
+/* 공지사항 리스트 커스텀 */
+.notice_list table tbody tr td:nth-child(3), .notice_list table tbody tr td:nth-child(4) { text-align: left; }
 
 /*
 
