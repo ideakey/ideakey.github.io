@@ -160,9 +160,9 @@ a {
     bottom: 2px;
     right: 5px;
     z-index: 1; }
-  .DataTable .DT-lengthMenu {
-    width: 70px;
-    text-align: center; }
+    .DataTable .DataTable_length_box .input-sm {
+      width: 70px;
+      text-align: center; }
   .DataTable .DataTables_filter_box {
     position: absolute;
     bottom: 2px;

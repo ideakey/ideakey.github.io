@@ -195,11 +195,12 @@ a {
     bottom: 2px;
     right: 5px;
     z-index: 1;
-  }
-  .DT-lengthMenu {
-    // 실제 리스트 숫자표시 부분
-    width: 70px;
-    text-align: center;
+    .input-sm {
+      // 실제 리스트 숫자표시 부분
+      width: 70px;
+      text-align: center;
+    }
+
   }
   .DataTables_filter_box {
     // 검색창
