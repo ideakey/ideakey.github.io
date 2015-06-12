@@ -170,6 +170,8 @@ a {
     margin: 5px 0 -2px 5px; }
   .DataTable table th, .DataTable table td {
     text-align: center; }
+  .DataTable .DT-lengthMenu {
+    width: 50px; }
 
 /* 아이콘 컬러 */
 i.red {

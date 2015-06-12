@@ -10,7 +10,7 @@ body {
   border: 1px solid #333;
   box-sizing: border-box;
 }
- 
+
 ul, li {
   margin: 0;
   padding: 0;
@@ -211,6 +211,9 @@ a {
     th,td {
       text-align: center;
     }
+  }
+  .DT-lengthMenu {
+    width: 50px;
   }
 } //.DataTable
 
