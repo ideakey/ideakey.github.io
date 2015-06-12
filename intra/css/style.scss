@@ -260,7 +260,15 @@ i.red {
 } // .client_list
 
 
-
+.ofx {
+  overflow-x: scroll;
+  table {
+    width: 100% !important ;
+    th, td {
+      white-space: nowrap;
+    }
+  }
+}
 
 
 

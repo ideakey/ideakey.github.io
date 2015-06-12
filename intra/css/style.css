@@ -186,6 +186,13 @@ i.red {
 .notice_list table tbody tr td:nth-child(3), .notice_list table tbody tr td:nth-child(4) {
   text-align: left; }
 
+.ofx {
+  overflow-x: scroll; }
+  .ofx table {
+    width: 100% !important; }
+    .ofx table th, .ofx table td {
+      white-space: nowrap; }
+
 /*
 
 $c: center;
