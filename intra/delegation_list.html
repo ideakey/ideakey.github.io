@@ -139,7 +139,7 @@
 					<!-- Your Page Content Here -->
 
 					<div class="row">
-						<div class="form-group col-xs-12 has-success">
+						<div class="form-group col-xs-12">
 							<div class="col-xs-3">
 								<select class="form-control" id="TeamFlag">
 									<option value="">팀 선택(전체)</option>
@@ -175,7 +175,7 @@
 								</select>
 							</div>
 							<div class="col-xs-3">
-								<div class="btn btn-success btn-block" onclick="fnFlagSearch();">조회</div>
+								<div class="btn btn-primary btn-block" onclick="fnFlagSearch();">조회</div>
 							</div>
 						</div>
 					</div>
@@ -192,24 +192,30 @@
 										<tr class="bg-primary disabled">
 											<th>NO.</th>
 											<th>팀명</th>
-											<th>광고주명</th>
 											<th>AE</th>
+											<th>광고주명</th>
 											<th>매체</th>
-											<th>솔루션</th>
+											<th>ID</th>
 											<th>위임</th>
-											<th>변동내역</th>
+											<th>전월매출</th>
+											<th>발행정보&확인</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
+											<td>1</td>
+											<td>마1팀</td>
+											<td>백창인</td>
+											<td>아이디어키</td>
+											<td>
+												<label class="label label-default">Nv</label>
+											</td>
+											<td>ideakey</td>
+											<td>입금</td>
+											<td>888,888,888</td>
+											<td>
+												<a href="#viewModal" data-toggle="modal" class="btn btn-xs btn-primary" onclick="fnBusinessInfo(53);">발행정보&확인</a>
+											</td>
 										</tr>
 									</tbody>
 								</table>
