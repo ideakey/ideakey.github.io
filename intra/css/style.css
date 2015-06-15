@@ -237,6 +237,10 @@ i.fa.fa-star {
 i.fa.fa-star-o {
   cursor: pointer;
   color: #aaa; }
+i.fa.fa-check-circle-o {
+  color: green; }
+i.fa.fa-ban {
+  color: #aaa; }
 
 /* 광고주 리스트 커스텀 */
 .client_list table tbody tr td:nth-child(4), .client_list table tbody tr td:nth-child(6), .client_list table tbody tr td:nth-child(8) {

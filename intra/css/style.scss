@@ -256,7 +256,6 @@ div.ofx {
 
 
 
-
 /* 데이터 테이블 관련 */
 .DataTable {
   position: relative;
@@ -320,6 +319,12 @@ i {
     }
     &.fa-star-o {
       cursor: pointer;
+      color: #aaa;
+    }
+    &.fa-check-circle-o {
+      color: green;
+    }
+    &.fa-ban {
       color: #aaa;
     }
   }
