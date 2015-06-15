@@ -340,13 +340,13 @@ i {
     tbody {
       tr {
         td {
-          &:nth-child(4),
+          &:nth-child(5),
           &:nth-child(6),
           &:nth-child(8) {
             text-align: left;
           }
-          &:nth-child(3) {
-            width: 30px;
+          &:nth-child(4) {
+            width: 20px;
           }
           &:nth-child(7) {
             text-align: right;
@@ -357,6 +357,7 @@ i {
     } // tbody
   } // table
 } // .client_list
+
 /* 권한별 리스트 뷰 CSS */
 // ae : AE
 // tl : 팀장
@@ -373,7 +374,7 @@ table {
     th,
     td {
       &:nth-child(2),
-      &:nth-child(5) {
+      &:nth-child(3) {
         display: none;
       }
     }
@@ -432,9 +433,7 @@ table {
 
 
 
-
-
-
+/*
 $c: center;
 $r: right;
 $l: left;
@@ -503,7 +502,7 @@ $l: left;
 } // .box
 
 
-
+ */
 
 
 
