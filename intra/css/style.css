@@ -22,8 +22,7 @@ a {
 /* CSS툴팁  */
 [data-tips] {
   position: relative;
-  text-decoration: none;
-  /* cursor: pointer; */ }
+  text-decoration: none; }
 
 [data-tips]:after,
 [data-tips]:before {
@@ -151,17 +150,17 @@ a {
 
 /* CSS툴팁  */
 /* 페이지 가로로 길경우에 대한 경우 */
-.ofx {
-  overflow-x: scroll;
+div.ofx {
+  overflow-x: auto;
   overflow-y: hidden;
   margin-bottom: 15px;
   width: 100%; }
-  .ofx table {
+  div.ofx table {
     /* width: 100% !important  */ }
-    .ofx table th, .ofx table td {
+    div.ofx table th, div.ofx table td {
       white-space: nowrap; }
-  .ofx .DataTables_filter_box,
-  .ofx .DataTable_length_box {
+  div.ofx .DataTables_filter_box,
+  div.ofx .DataTable_length_box {
     bottom: 15px; }
 
 /* 데이터 테이블 관련 */

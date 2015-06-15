@@ -31,7 +31,6 @@ a {
 [data-tips] {
 	position: relative;
 	text-decoration: none;
-  /* cursor: pointer; */
 }
 
 	[data-tips]:after,
@@ -182,8 +181,8 @@ a {
 /* CSS툴팁  */
 
 /* 페이지 가로로 길경우에 대한 경우 */
-.ofx {
-  overflow-x: scroll;
+div.ofx {
+  overflow-x: auto;
   overflow-y: hidden;
   margin-bottom: 15px;
   width: 100%;
@@ -198,7 +197,6 @@ a {
     bottom: 15px;
   }
 }
-
 
 
 
