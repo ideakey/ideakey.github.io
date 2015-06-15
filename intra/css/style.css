@@ -149,16 +149,21 @@ a {
   top: 7px; }
 
 /* CSS툴팁  */
+/* 매출용 CSS툴팁  */
 a.tooltips {
   position: relative;
-  display: inline; }
+  display: inline;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease; }
 
 a.tooltips span {
   position: absolute;
-  width: 140px;
+  width: 160px;
   color: #FFFFFF;
   background: #000000;
   visibility: hidden;
+  text-align: left;
   padding: 5px;
   border-radius: 4px; }
 
@@ -182,6 +187,7 @@ a:hover.tooltips span {
   margin-left: -76px;
   z-index: 999; }
 
+/* 매출용 CSS툴팁  */
 /* 페이지 가로로 길경우에 대한 경우 */
 div.ofx {
   overflow-x: auto;

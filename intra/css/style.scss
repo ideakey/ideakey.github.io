@@ -180,17 +180,21 @@ a {
 
 /* CSS툴팁  */
 
-
+/* 매출용 CSS툴팁  */
 a.tooltips {
   position: relative;
   display: inline;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease;
 }
 a.tooltips span {
   position: absolute;
-  width:140px;
+  width:160px;
   color: #FFFFFF;
   background: #000000;
   visibility: hidden;
+  text-align: left;
   padding: 5px;
   border-radius: 4px;
 }
@@ -214,7 +218,7 @@ a:hover.tooltips span {
   z-index: 999;
 }
 
-
+/* 매출용 CSS툴팁  */
 
 
 
