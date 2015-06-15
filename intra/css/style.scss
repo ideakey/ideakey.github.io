@@ -31,7 +31,7 @@ a {
 [data-tips] {
 	position: relative;
 	text-decoration: none;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 	[data-tips]:after,
@@ -97,7 +97,8 @@ a {
 	}
 
 	[data-tips].top-tip:hover:before {
-		left: 15px;
+		left: 5px;
+    // left: 15px; 기본값은 이거임
 	}
 
 /* Bottom tip */
@@ -180,15 +181,38 @@ a {
 
 /* CSS툴팁  */
 
+/* 페이지 가로로 길경우에 대한 경우 */
+.ofx {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-bottom: 15px;
+  width: 100%;
+  table {
+    /* width: 100% !important  */;
+    th, td {
+      white-space: nowrap;
+    }
+  }
+  .DataTables_filter_box,
+  .DataTable_length_box {
+    bottom: 15px;
+  }
+}
+
+
+
+
 
 
 
 /* 데이터 테이블 관련 */
 .DataTable {
   position: relative;
+
   .col-xs-12 {
     margin-top:-6px;
   }
+
   .DataTable_length_box {
     //리스트 출력 갯수
     position: absolute;
@@ -202,6 +226,7 @@ a {
     }
 
   }
+
   .DataTables_filter_box {
     // 검색창
     position: absolute;
@@ -209,22 +234,48 @@ a {
     right: 130px;
     z-index: 1;
   }
+
   .dataTables_paginate {
     text-align: left;
     margin: 5px 0 -2px 5px;
   }
+
   table {
     th,td {
       text-align: center;
     }
   }
+  //별표 옆 숫자 숨기기
+  span.star {
+    display:none;
+  }
 
 } //.DataTable
 
+
+
+
+
 /* 아이콘 컬러 */
-i.red {
-  color:#f56954;
+i {
+  &.red {
+    color:#f56954;
+  }
+  &.fa {
+    &.fa-star {
+      cursor: pointer;
+      color: #39CCCC;
+    }
+    &.fa-star-o {
+      cursor: pointer;
+      color: #aaa;
+    }
+  }
 }
+
+
+
+
 
 /* 광고주 리스트 커스텀 */
 .client_list {
@@ -232,10 +283,17 @@ i.red {
     tbody {
       tr {
         td {
-          &:nth-child(3),
-          &:nth-child(5),
-          &:nth-child(6) {
+          &:nth-child(4),
+          &:nth-child(6),
+          &:nth-child(8) {
             text-align: left;
+          }
+          &:nth-child(3) {
+            width: 30px;
+          }
+          &:nth-child(7) {
+            text-align: right;
+            padding-right: 10px;
           }
         } // td
       } // tr
@@ -260,22 +318,6 @@ i.red {
 } // .client_list
 
 
-.ofx {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  margin-bottom: 15px;
-  width: 100%;
-  table {
-    /* width: 100% !important  */;
-    th, td {
-      white-space: nowrap;
-    }
-  }
-  .DataTables_filter_box,
-  .DataTable_length_box {
-    bottom: 15px;
-  }
-}
 
 
 

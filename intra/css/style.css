@@ -23,7 +23,7 @@ a {
 [data-tips] {
   position: relative;
   text-decoration: none;
-  cursor: pointer; }
+  /* cursor: pointer; */ }
 
 [data-tips]:after,
 [data-tips]:before {
@@ -81,7 +81,7 @@ a {
   left: 0; }
 
 [data-tips].top-tip:hover:before {
-  left: 15px; }
+  left: 5px; }
 
 /* Bottom tip */
 [data-tips].bottom-tip:after,
@@ -150,6 +150,20 @@ a {
   top: 7px; }
 
 /* CSS툴팁  */
+/* 페이지 가로로 길경우에 대한 경우 */
+.ofx {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-bottom: 15px;
+  width: 100%; }
+  .ofx table {
+    /* width: 100% !important  */ }
+    .ofx table th, .ofx table td {
+      white-space: nowrap; }
+  .ofx .DataTables_filter_box,
+  .ofx .DataTable_length_box {
+    bottom: 15px; }
+
 /* 데이터 테이블 관련 */
 .DataTable {
   position: relative; }
@@ -173,31 +187,31 @@ a {
     margin: 5px 0 -2px 5px; }
   .DataTable table th, .DataTable table td {
     text-align: center; }
+  .DataTable span.star {
+    display: none; }
 
 /* 아이콘 컬러 */
 i.red {
   color: #f56954; }
+i.fa.fa-star {
+  cursor: pointer;
+  color: #39CCCC; }
+i.fa.fa-star-o {
+  cursor: pointer;
+  color: #aaa; }
 
 /* 광고주 리스트 커스텀 */
-.client_list table tbody tr td:nth-child(3), .client_list table tbody tr td:nth-child(5), .client_list table tbody tr td:nth-child(6) {
+.client_list table tbody tr td:nth-child(4), .client_list table tbody tr td:nth-child(6), .client_list table tbody tr td:nth-child(8) {
   text-align: left; }
+.client_list table tbody tr td:nth-child(3) {
+  width: 30px; }
+.client_list table tbody tr td:nth-child(7) {
+  text-align: right;
+  padding-right: 10px; }
 
 /* 공지사항 리스트 커스텀 */
 .notice_list table tbody tr td:nth-child(3), .notice_list table tbody tr td:nth-child(4) {
   text-align: left; }
-
-.ofx {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  margin-bottom: 15px;
-  width: 100%; }
-  .ofx table {
-    /* width: 100% !important  */ }
-    .ofx table th, .ofx table td {
-      white-space: nowrap; }
-  .ofx .DataTables_filter_box,
-  .ofx .DataTable_length_box {
-    bottom: 15px; }
 
 .box {
   position: relative; }
