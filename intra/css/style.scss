@@ -357,6 +357,32 @@ i {
     } // tbody
   } // table
 } // .client_list
+/* 권한별 리스트 뷰 CSS */
+// ae : AE
+// tl : 팀장
+table {
+  &.tl {
+    th,
+    td {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+  &.ae {
+    th,
+    td {
+      &:nth-child(2),
+      &:nth-child(5) {
+        display: none;
+      }
+    }
+  }
+}
+/* 권한별 리스트 뷰 CSS */
+
+
+
 
 /* 공지사항 리스트 커스텀 */
 .notice_list {
