@@ -398,6 +398,9 @@ table {
           &:nth-child(9) {
             text-align: right;
           }
+          label {
+            font-weight: 400;
+          }
         }
       }
     }
