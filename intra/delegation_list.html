@@ -238,7 +238,7 @@
 											<td>3</td>
 											<td>3팀</td>
 											<td>김태운</td>
-											<td class=""><input type="checkbox"  > 맑은소리샘</td>
+											<td class="test_check_td"><input type="checkbox" class="test_check"  > 맑은소리샘</td>
 											<td>
 												<label class="label label-default">Nv</label>
 											</td>
@@ -478,6 +478,17 @@
 		      }
 				});
 			});
+
+			$(".test_check").click(function() {
+				var x;
+				if (confirm("계산서 발행이 끝났습니까?") == true) {
+					x = "bg-success";
+				} else {
+					x = "";
+				}
+				$(".test_check_td").addClass(x);
+			});
+
 		</script>
 	</body>
 </html>
