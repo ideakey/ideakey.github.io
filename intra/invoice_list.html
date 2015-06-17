@@ -124,12 +124,13 @@
 				<!-- Content Header (Page header) -->
 				<section class="content-header">
 					<h1>
-						위임 리스트 <!-- 메인 타이틀 -->
-						<small>위임 광고주 리스트</small><!-- 서브 타이틀 -->
+						세금계산서 발행 리스트 <!-- 메인 타이틀 -->
+						<small>위임 광고주에 대한 세금계산서 발행 현황 리스트</small><!-- 서브 타이틀 -->
 					</h1>
 					<ol class="breadcrumb">
 						<li><a href="#"><i class="fa fa-dashboard"></i>Intra</a></li>
-						<li class="active">위임 리스트</li>
+						<li><a href="#">위임 리스트</a></li>
+						<li class="active">세금계산서 발행 리스트</li>
 					</ol>
 				</section>
 
@@ -183,7 +184,7 @@
 
 						<div class="row">
 							<div class="col-xs-12">
-								<div class="box DataTable delegation_list">
+								<div class="box DataTable invoice_list">
 									<div class="box-body no-padding">
 
 								<!-- 테이블 -->
@@ -193,13 +194,14 @@
 											<th>NO.</th>
 											<th>팀명</th>
 											<th>AE</th>
-											<th>광고주명</th>
+											<th>사업자명</th>
+											<th>사이트명</th>
 											<th>매체</th>
-											<th>위임일</th>
-											<th>ID</th>
-											<th>위임</th>
+											<th>사업자등록번호</th>
+											<th>발행일</th>
+											<th>발행금액</th>
 											<th>전월매출</th>
-											<th>발행정보&확인</th>
+											<th>유형</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -207,138 +209,13 @@
 											<td>1</td>
 											<td>마1팀</td>
 											<td>백창인</td>
-											<td class=" bg-success"><input type="checkbox" checked > 아이디어키 <a class="top-tip" data-tips="회계팀 전용 메모의 최근 20자 정도만 보이도록..."><i class="fa fa-book"></i></a></td>
+											<td><input type="checkbox" checked > 아이디어키 <a class="top-tip" data-tips="회계팀 전용 메모의 최근 20자 정도만 보이도록..."><i class="fa fa-book"></i></a></td>
 											<td>
 												<label class="label label-default">Nv</label>
 											</td>
 											<td>15.06.16</td>
 											<td>ideakey</td>
 											<td>입금</td>
-											<td>888,888,888</td>
-											<td>
-												<a href="#viewModal" data-toggle="modal" class="btn btn-xs btn-primary" onclick="fnBusinessInfo(53);">발행정보&확인</a>
-											</td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>2팀</td>
-											<td>황의상</td>
-											<td class=" bg-success"><label><input type="checkbox" checked > 미사리가구</label> <a class="top-tip" data-tips="회계팀 전용 메모의 최근 20자 정도만 보이도록..."><i class="fa fa-book"></i></a></td>
-											<td>
-												<label class="label label-default">Nv</label>
-											</td>
-											<td>13.06.16</td>
-											<td>misari</td>
-											<td>정산</td>
-											<td>888,888,888</td>
-											<td>
-												<a href="#viewModal" data-toggle="modal" class="btn btn-xs btn-primary" onclick="fnBusinessInfo(53);">발행정보&확인</a>
-											</td>
-										<tr>
-											<td>3</td>
-											<td>3팀</td>
-											<td>김태운</td>
-											<td class="test_check_td"><input type="checkbox" class="test_check"  > 맑은소리샘</td>
-											<td>
-												<label class="label label-default">Nv</label>
-											</td>
-											<td>13.02.14</td>
-											<td>englhome</td>
-											<td>청구형</td>
-											<td>888,888,888</td>
-											<td>
-												<a href="#viewModal" data-toggle="modal" class="btn btn-xs btn-primary" onclick="fnBusinessInfo(53);">발행정보&확인</a>
-											</td>
-										</tr>
-										<tr>
-											<td>4</td>
-											<td>마1팀</td>
-											<td>백창인</td>
-											<td class=" bg-success"><input type="checkbox" checked > 아이디어키 <a class="top-tip" data-tips="회계팀 전용 메모의 최근 20자 정도만 보이도록..."><i class="fa fa-book"></i></a></td>
-											<td>
-												<label class="label label-default">Nv</label>
-											</td>
-											<td>15.06.16</td>
-											<td>ideakey</td>
-											<td>입금</td>
-											<td>888,888,888</td>
-											<td>
-												<a href="#viewModal" data-toggle="modal" class="btn btn-xs btn-primary" onclick="fnBusinessInfo(53);">발행정보&확인</a>
-											</td>
-										</tr>
-										<tr>
-											<td>5</td>
-											<td>2팀</td>
-											<td>황의상</td>
-											<td class=" bg-success"><input type="checkbox" checked > 미사리가구 </td>
-											<td>
-												<label class="label label-default">Nv</label>
-											</td>
-											<td>13.06.16</td>
-											<td>misari</td>
-											<td>정산</td>
-											<td>888,888,888</td>
-											<td>
-												<a href="#viewModal" data-toggle="modal" class="btn btn-xs btn-primary" onclick="fnBusinessInfo(53);">발행정보&확인</a>
-											</td>
-										<tr>
-											<td>6</td>
-											<td>3팀</td>
-											<td>김태운</td>
-											<td class=""><input type="checkbox"  > 맑은소리샘 <a class="top-tip" data-tips="회계팀 전용 메모의 최근 20자 정도만 보이도록..."><i class="fa fa-book"></i></a></td>
-											<td>
-												<label class="label label-default">Nv</label>
-											</td>
-											<td>13.02.14</td>
-											<td>englhome</td>
-											<td>청구형</td>
-											<td>888,888,888</td>
-											<td>
-												<a href="#viewModal" data-toggle="modal" class="btn btn-xs btn-primary" onclick="fnBusinessInfo(53);">발행정보&확인</a>
-											</td>
-										</tr>
-										<tr>
-											<td>7</td>
-											<td>마1팀</td>
-											<td>백창인</td>
-											<td class=" bg-success"><input type="checkbox" checked > 아이디어키 </td>
-											<td>
-												<label class="label label-default">Nv</label>
-											</td>
-											<td>15.06.16</td>
-											<td>ideakey</td>
-											<td>입금</td>
-											<td>888,888,888</td>
-											<td>
-												<a href="#viewModal" data-toggle="modal" class="btn btn-xs btn-primary" onclick="fnBusinessInfo(53);">발행정보&확인</a>
-											</td>
-										</tr>
-										<tr>
-											<td>8</td>
-											<td>2팀</td>
-											<td>황의상</td>
-											<td class=" bg-success"><input type="checkbox" checked > 미사리가구 </td>
-											<td>
-												<label class="label label-default">Nv</label>
-											</td>
-											<td>13.06.16</td>
-											<td>misari</td>
-											<td>정산</td>
-											<td>888,888,888</td>
-											<td>
-												<a href="#viewModal" data-toggle="modal" class="btn btn-xs btn-primary" onclick="fnBusinessInfo(53);">발행정보&확인</a>
-											</td>
-										<tr>
-											<td>9</td>
-											<td>3팀</td>
-											<td>김태운</td>
-											<td class=""><input type="checkbox"  > 맑은소리샘</td>
-											<td>
-												<label class="label label-default">Nv</label>
-											</td>
-											<td>13.02.14</td>
-											<td>englhome</td>
-											<td>청구형</td>
 											<td>888,888,888</td>
 											<td>
 												<a href="#viewModal" data-toggle="modal" class="btn btn-xs btn-primary" onclick="fnBusinessInfo(53);">발행정보&확인</a>
@@ -477,17 +354,6 @@
 						"search": "검색 _INPUT_"
 		      }
 				});
-			});
-
-			// 체크박스 클릭시 엑션 미리보기용 JS 실개발시 작제
-			$(".test_check").click(function() {
-				var x;
-				if (confirm("계산서 발행이 끝났습니까?") == true) {
-					x = "bg-success";
-				} else {
-					x = "";
-				}
-				$(".test_check_td").addClass(x);
 			});
 
 		</script>
