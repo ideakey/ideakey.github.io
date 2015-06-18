@@ -406,7 +406,7 @@ table {
     }
   }
 }
-/* 세금계산서 위임 리스트 커스텀 */
+/* 세금계산서 발행 리스트 커스텀 */
 .invoice_list {
   table {
     tbody {
@@ -424,7 +424,6 @@ table {
         }
         input[type="text"] {
           display: none;
-          /* padding-right: 5px; */
           text-align: right;
           width: 100px;
           border: 1px solid #aaa;
