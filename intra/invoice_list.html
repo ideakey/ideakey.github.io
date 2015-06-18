@@ -195,12 +195,12 @@
 											<th>AE</th>
 											<th>사업자명</th>
 											<th>사이트명</th>
-											<th>매체</th>
 											<th>사업자등록번호</th>
-											<th>발행일</th>
-											<th>발행금액</th>
-											<th>전월매출</th>
+											<th>매체</th>
 											<th>유형</th>
+											<th>발행일</th>
+											<th>전월매출</th>
+											<th>발행금액</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -209,15 +209,17 @@
 											<td>마1팀</td>
 											<td>백창인</td>
 											<td>아이디어키</td>
+											<td>아이디어키</td>
+											<td>220-87-07893</td>
 											<td>
 												<label class="label label-default">Nv</label>
 											</td>
-											<td>15.06.16</td>
-											<td>ideakey</td>
-											<td>입금</td>
-											<td>입금</td>
+											<td>정산</td>
+											<td>15-06-18</td>
 											<td>888,888,888</td>
-											<td>11</td>
+											<td>
+												<input type="text" class="invoice_value disabled" value="888,888,888">
+											</td>
 										</tr>
 
 									</tbody>
@@ -292,7 +294,11 @@
 		      }
 				});
 			});
-
+			$(".invoice_value").dblclick(function() {
+				$(this).removeClass("disabled");
+				$(this).css("border","1px solid #aaa")
+				       .css("background","#fff")
+			});
 		</script>
 	</body>
 </html>
