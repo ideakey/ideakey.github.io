@@ -411,19 +411,24 @@ table {
   table {
     tbody {
       td {
+        &:nth-child(3) {
+          white-space: nowrap;
+        }
         &:nth-child(4),
         &:nth-child(5) {
           text-align: left;
         }
-        &:nth-child(9),{
+        &:nth-child(9),
+        &:nth-child(10) {
           text-align: right;
         }
         input[type="text"] {
-          color: inherit;
+          display: none;
+          /* padding-right: 5px; */
           text-align: right;
           width: 100px;
-          border: none;
-          background-color: rgba(255, 255, 255, 0);
+          border: 1px solid #aaa;
+          font-weight: 400;
         }
       }
     }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+``<!DOCTYPE html>
 <html lang="ko">
 <head>
 		<meta charset="utf-8">
@@ -196,6 +196,7 @@
 											<th>사업자명</th>
 											<th>사이트명</th>
 											<th>사업자등록번호</th>
+											<th>ID</th>
 											<th>매체</th>
 											<th>유형</th>
 											<th>발행일</th>
@@ -211,6 +212,7 @@
 											<td>가루다인도네시아 항공</td>
 											<td>가루다페북</td>
 											<td>220-87-07893</td>
+											<td>ideakey</td>
 											<td>
 												<label class="label label-default">Nv</label>
 											</td>
@@ -218,7 +220,8 @@
 											<td>15-05-18</td>
 											<td>188,888,888</td>
 											<td>
-												<input type="text" class="invoice_value disabled" value="288,888,888">
+												<span class="invoice_value">888,888,888</span>
+												<input type="text" class="invoice_input" value="888,888,888">
 											</td>
 										</tr>
 										<tr>
@@ -228,6 +231,7 @@
 											<td>사단법인 포케이 그룹</td>
 											<td>포케이</td>
 											<td>220-57-07893</td>
+											<td>for4k</td>
 											<td>
 												<label class="label label-default">Ns</label>
 											</td>
@@ -235,16 +239,17 @@
 											<td>15-02-28</td>
 											<td>8,888,888</td>
 											<td>
-												<input type="text" class="invoice_value disabled" value="9,888,888">
+												<span class="invoice_valu">888,888,888</span>
 											</td>
 										</tr>
 										<tr>
 											<td>3</td>
-											<td>교육팀</td>ㅇ
+											<td>교육팀</td>
 											<td>이근우</td>
 											<td>다음커뮤니케이션즈</td>
 											<td>다음</td>
 											<td>220-87-07893</td>
+											<td>daumcorp</td>
 											<td>
 												<label class="label label-default">Dc</label>
 											</td>
@@ -252,7 +257,7 @@
 											<td>15-06-18</td>
 											<td>88,888,888</td>
 											<td>
-												<input type="text" class="invoice_value disabled" value="88,888,888">
+												<span class="invoice_valu">888,888,888</span>
 											</td>
 										</tr>
 										<tr>
@@ -262,6 +267,7 @@
 											<td>맑은소리샘</td>
 											<td>파란소리샘</td>
 											<td>220-87-07893</td>
+											<td>paransori</td>
 											<td>
 												<label class="label label-default">Dc</label>
 											</td>
@@ -269,7 +275,7 @@
 											<td>15-06-15</td>
 											<td>188,888,888</td>
 											<td>
-												<input type="text" class="invoice_value disabled" value="188,888,888">
+												<span class="invoice_valu">888,888,888</span>
 											</td>
 										</tr>
 										<tr>
@@ -279,14 +285,15 @@
 											<td>아이디어키</td>
 											<td>아이디어키</td>
 											<td>220-87-07893</td>
+											<td>ideakey</td>
 											<td>
-												<label class="label label-default">Nv</label>
+												<label class="label label-default">Dc</label>
 											</td>
 											<td>정산</td>
 											<td>15-06-18</td>
 											<td>888,888,888</td>
 											<td>
-												<input type="text" class="invoice_value disabled" value="888,888,888">
+												<span class="invoice_valu">888,888,888</span>
 											</td>
 										</tr>
 
@@ -362,11 +369,15 @@
 		      }
 				});
 			});
+
+			// 더블클릭 폼 활성화 코드
 			$(".invoice_value").dblclick(function() {
-				$(this).removeClass("disabled");
-				$(this).css("border","1px solid #aaa")
-				       .css("background","#fff")
+				var iv_ip = $(".invoice_value > input");
+				$(this).css("display","none");
+				$(".invoice_input").css("display","block");
+
 			});
 		</script>
 	</body>
 </html>
+``
