@@ -448,6 +448,9 @@ table {
           &:nth-child(10) {
             text-align: right;
           }
+          &:nth-child(10) {
+            width: 100px;
+          }
         } // td
       } // tr
     } // tbody

@@ -208,7 +208,7 @@
 											<td>1</td>
 											<td>1팀</td>
 											<td>백창인</td>
-											<td class=" bg-success">가루다페북</td>
+											<td class="test_check_td"><input type="checkbox" class="test_check"> 가루다페북</td>
 											<td>
 												<label class="label label-default">Nv</label>
 											</td>
@@ -219,6 +219,25 @@
 											<td>888,888,888</td>
 											<td>3%</td>
 											<td>888,888</td>
+											<td>
+												<a href="#viewModal" data-toggle="modal" class="btn btn-xs btn-primary" onclick="fnBusinessInfo(53);">상세내용</a>
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>2팀</td>
+											<td>김태영</td>
+											<td class="test_check_td"><input type="checkbox" class="test_check"> 말긍소리샘</td>
+											<td>
+												<label class="label label-default">Dc</label>
+											</td>
+											<td>ideakey</td>
+											<td>
+												<label class="label label-danger">계산서</label>
+											</td>
+											<td>888,888,888</td>
+											<td>10%</td>
+											<td>1,118,888</td>
 											<td>
 												<a href="#viewModal" data-toggle="modal" class="btn btn-xs btn-primary" onclick="fnBusinessInfo(53);">상세내용</a>
 											</td>
@@ -359,11 +378,15 @@
 				});
 			});
 
-			// 더블클릭 폼 활성화 코드 실제 개발시 삭제
-			$(".invoice_value").dblclick(function() {
-				var iv_ip = $(".invoice_value > input");
-				$(this).css("display","none");
-				$(".invoice_input").css("display","block");
+			// 체크박스 클릭시 엑션 미리보기용 JS 실개발시 작제
+			$(".test_check").click(function() {
+				var x;
+				if (confirm("계산서 발행이 끝났습니까?") == true) {
+					x = "bg-success";
+				} else {
+					x = "";
+				}
+				$(".test_check_td").addClass(x);
 			});
 
 		</script>
