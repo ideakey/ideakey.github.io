@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+``<!DOCTYPE html>
 <html lang="ko">
 <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title> 리베이트 현황 리스트 </title>
+		<title> 인트라넷 - 위임 리스트 </title>
 		<!-- Bootstrap 3.3.4 -->
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 		<!-- Font Awesome Icons -->
@@ -124,12 +124,11 @@
 				<!-- Content Header (Page header) -->
 				<section class="content-header">
 					<h1>
-						세금계산서 발행 리스트 <!-- 메인 타이틀 -->
-						<small>위임 광고주에 대한 세금계산서 발행 현황 리스트</small><!-- 서브 타이틀 -->
+						리베이트 리스트 <!-- 메인 타이틀 -->
+						<small>리베이트 지급 광고주에 대한 현황 리스트</small><!-- 서브 타이틀 -->
 					</h1>
 					<ol class="breadcrumb">
 						<li><a href="#"><i class="fa fa-dashboard"></i>Intra</a></li>
-						<li><a href="#">위임 리스트</a></li>
 						<li class="active">세금계산서 발행 리스트</li>
 					</ol>
 				</section>
@@ -143,8 +142,7 @@
 						<div class="form-group col-xs-12">
 							<div class="col-xs-3">
 								<select class="form-control" id="TeamFlag">
-									<option value="">팀 선택(전체)</option>
-									<option value="1">1팀</option>
+									<option value="">팀 선택(전체)
 									<option value="2">2팀</option>
 									<option value="3">3팀</option>
 									<option value="5">교육팀</option>
@@ -169,10 +167,9 @@
 							</div>
 							<div class="col-xs-3">
 								<select class="form-control" id="ISDelegation">
-									<option value="">위임 유형 (전체)</option>
-									<option value="1">입금 기준 발행</option>
-									<option value="2">정산 기준 발행</option>
-									<option value="3">청구형 선 발행</option>
+									<option value="">리베이트 유형 (전체)</option>
+									<option value="1">매체 충전</option>
+									<option value="3">계산서 발행</option>
 								</select>
 							</div>
 							<div class="col-xs-3">
@@ -184,7 +181,7 @@
 
 						<div class="row">
 							<div class="col-xs-12">
-								<div class="box DataTable invoice_list">
+								<div class="boxs DataTable rebate_list">
 									<div class="box-body no-padding">
 
 								<!-- 테이블 -->
@@ -194,7 +191,6 @@
 											<th>NO.</th>
 											<th>팀명</th>
 											<th>AE</th>
-											<th>사업자명</th>
 											<th>사이트명</th>
 											<th>사업자등록번호</th>
 											<th>ID</th>
@@ -208,94 +204,19 @@
 									<tbody>
 										<tr>
 											<td>1</td>
-											<td>마1팀</td>
-											<td>백창인</td>
-											<td>아이디어키</td>
-											<td>아이디어키</td>
+											<td>1팀</td>
+											<td>김태영</td>
+											<td>가루다페북</td>
 											<td>220-87-07893</td>
 											<td>ideakey</td>
 											<td>
 												<label class="label label-default">Nv</label>
 											</td>
 											<td>청구</td>
-											<td>15.06.16</td>
-											<td>88,888,888</td>
-											<td>
-												<span class="invoice_value">888,888,888</span>
-												<input type="text" class="invoice_input" value="888,888,888">
-											</td>
-										<tr>
-											<td>2</td>
-											<td>마2팀</td>
-											<td>신용철</td>
-											<td>사단법인 포케이 그룹</td>
-											<td>포케이</td>
-											<td>220-57-07893</td>
-											<td>for4k</td>
-											<td>
-												<label class="label label-default">Ns</label>
-											</td>
-											<td>입금</td>
-											<td>15-02-28</td>
-											<td>8,888,888</td>
-											<td>
-												<span class="invoice_valu">888,888,888</span>
-											</td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td>교육팀</td>
-											<td>이근우</td>
-											<td>다음커뮤니케이션즈</td>
-											<td>다음</td>
-											<td>220-87-07893</td>
-											<td>daumcorp</td>
-											<td>
-												<label class="label label-default">Dc</label>
-											</td>
-											<td>정산</td>
-											<td>15-06-18</td>
-											<td>88,888,888</td>
-											<td>
-												<span class="invoice_valu">888,888,888</span>
-											</td>
-										</tr>
-										<tr>
-											<td>4</td>
-											<td>3팀</td>
-											<td>난다요</td>
-											<td>맑은소리샘</td>
-											<td>파란소리샘</td>
-											<td>220-87-07893</td>
-											<td>paransori</td>
-											<td>
-												<label class="label label-default">Dc</label>
-											</td>
-											<td>입금</td>
-											<td>15-06-15</td>
+											<td>15-05-18</td>
 											<td>188,888,888</td>
-											<td>
-												<span class="invoice_valu">888,888,888</span>
-											</td>
+											<td>111</td>
 										</tr>
-										<tr>
-											<td>5</td>
-											<td>마1팀</td>
-											<td>백창인</td>
-											<td>아이디어키</td>
-											<td>아이디어키</td>
-											<td>220-87-07893</td>
-											<td>ideakey</td>
-											<td>
-												<label class="label label-default">Dc</label>
-											</td>
-											<td>정산</td>
-											<td>15-06-18</td>
-											<td>888,888,888</td>
-											<td>
-												<span class="invoice_valu">888,888,888</span>
-											</td>
-										</tr></tr>
 
 									</tbody>
 								</table>
@@ -335,7 +256,6 @@
 		</div><!-- ./wrapper -->
 
 
-
 		<!-- REQUIRED JS SCRIPTS -->
 
 		<!-- jQuery 2.1.4 -->
@@ -366,18 +286,12 @@
 		          '<option value="50">50</option>'+
 		          '<option value="-1">All</option>'+
 		         '</select>',
-						"search": "검색 _INPUT_"
+						"search": "검색_INPUT_"
 		      }
 				});
-			});
-
-			// 더블클릭 폼 활성화 코드 실제 개발시 삭제
-			$(".invoice_value").dblclick(function() {
-				var iv_ip = $(".invoice_value > input");
-				$(this).css("display","none");
-				$(".invoice_input").css("display","block");
 			});
 
 		</script>
 	</body>
 </html>
+``
