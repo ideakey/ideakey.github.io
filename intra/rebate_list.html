@@ -199,7 +199,7 @@
 											<th>유형</th>
 											<th>전월매출</th>
 											<th>조건</th>
-											<th>금액</th>
+											<th>금액(vat별도)</th>
 											<th>상세내용</th>
 										</tr>
 									</thead>
@@ -208,17 +208,19 @@
 											<td>1</td>
 											<td>1팀</td>
 											<td>백창인</td>
-											<td>가루다페북</td>
+											<td class=" bg-success">가루다페북</td>
 											<td>
 												<label class="label label-default">Nv</label>
 											</td>
 											<td>ideakey</td>
-											<td>충전</td>
+											<td>
+												<label class="label label-warning">충전</label>
+											</td>
 											<td>888,888,888</td>
 											<td>3%</td>
 											<td>888,888</td>
 											<td>
-												<a href="#viewModal" data-toggle="modal" class="btn btn-xs btn-primary" onclick="fnBusinessInfo(53);">발행정보&확인</a>
+												<a href="#viewModal" data-toggle="modal" class="btn btn-xs btn-primary" onclick="fnBusinessInfo(53);">상세내용</a>
 											</td>
 										</tr>
 
@@ -284,7 +286,7 @@
 									위임일 : <br/>
 									<strong>2015-06-16</strong> <br/><br/>
 									위임유형 : <br/>
-									<strong>청구형 발행</strong>
+									<strong>입금 기준 발행</strong>
 								</span>
 								<span>
 									업체명 : <strong>아이디어키</strong> <br/>
@@ -307,8 +309,9 @@
 
 
 					<div class="form-group col-xs-12">
-						<label>광고주 메모</label>
-						<textarea class="form-control" rows="3" placeholder="회계팀 전용 메모..."></textarea>
+						<label>리베이트 메모</label>
+						<input type="text" class="col-xs-12" placeholder="리베이트 요약 내용">
+						<textarea class="form-control" rows="3" placeholder="리베이트 상세 내용"></textarea>
 						<div class="jmt5 btn btn-default btn-xs pull-right"> 메모 저장 </div>
 					</div>
 				</div>

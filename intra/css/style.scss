@@ -441,9 +441,12 @@ table {
     tbody {
       tr {
         td {
-          &:nth-child(3),
           &:nth-child(4) {
             text-align: left;
+          }
+          &:nth-child(8),
+          &:nth-child(10) {
+            text-align: right;
           }
         } // td
       } // tr
