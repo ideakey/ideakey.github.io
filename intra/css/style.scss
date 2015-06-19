@@ -435,6 +435,26 @@ table {
 }
 
 
+/* 리베이트 현황 리스트 커스텀 */
+.rebate_list {
+  table {
+    tbody {
+      tr {
+        td {
+          &:nth-child(3),
+          &:nth-child(4) {
+            text-align: left;
+          }
+        } // td
+      } // tr
+    } // tbody
+  } // table
+} // .rebate_list
+
+
+
+
+
 
 /* 공지사항 리스트 커스텀 */
 .notice_list {
@@ -450,7 +470,7 @@ table {
       } // tr
     } // tbody
   } // table
-} // .client_list
+} // ._list
 
 
 

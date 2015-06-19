@@ -169,10 +169,9 @@
 							</div>
 							<div class="col-xs-3">
 								<select class="form-control" id="ISDelegation">
-									<option value="">위임 유형 (전체)</option>
-									<option value="1">입금 기준 발행</option>
-									<option value="2">정산 기준 발행</option>
-									<option value="3">청구형 선 발행</option>
+									<option value="">리베이트 유형 (전체)</option>
+									<option value="1">매체 충전</option>
+									<option value="2">계산서 발행</option>
 								</select>
 							</div>
 							<div class="col-xs-3">
@@ -184,7 +183,7 @@
 
 						<div class="row">
 							<div class="col-xs-12">
-								<div class="box DataTable invoice_list">
+								<div class="box DataTable rebate_list">
 									<div class="box-body no-padding">
 
 								<!-- 테이블 -->
@@ -194,108 +193,34 @@
 											<th>NO.</th>
 											<th>팀명</th>
 											<th>AE</th>
-											<th>사업자명</th>
 											<th>사이트명</th>
-											<th>사업자등록번호</th>
-											<th>ID</th>
 											<th>매체</th>
+											<th>ID</th>
 											<th>유형</th>
-											<th>발행일</th>
 											<th>전월매출</th>
-											<th>발행금액</th>
+											<th>조건</th>
+											<th>금액</th>
+											<th>상세내용</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td>1</td>
-											<td>마1팀</td>
+											<td>1팀</td>
 											<td>백창인</td>
-											<td>아이디어키</td>
-											<td>아이디어키</td>
-											<td>220-87-07893</td>
-											<td>ideakey</td>
+											<td>가루다페북</td>
 											<td>
 												<label class="label label-default">Nv</label>
 											</td>
-											<td>청구</td>
-											<td>15.06.16</td>
-											<td>88,888,888</td>
-											<td>
-												<span class="invoice_value">888,888,888</span>
-												<input type="text" class="invoice_input" value="888,888,888">
-											</td>
-										<tr>
-											<td>2</td>
-											<td>마2팀</td>
-											<td>신용철</td>
-											<td>사단법인 포케이 그룹</td>
-											<td>포케이</td>
-											<td>220-57-07893</td>
-											<td>for4k</td>
-											<td>
-												<label class="label label-default">Ns</label>
-											</td>
-											<td>입금</td>
-											<td>15-02-28</td>
-											<td>8,888,888</td>
-											<td>
-												<span class="invoice_valu">888,888,888</span>
-											</td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td>교육팀</td>
-											<td>이근우</td>
-											<td>다음커뮤니케이션즈</td>
-											<td>다음</td>
-											<td>220-87-07893</td>
-											<td>daumcorp</td>
-											<td>
-												<label class="label label-default">Dc</label>
-											</td>
-											<td>정산</td>
-											<td>15-06-18</td>
-											<td>88,888,888</td>
-											<td>
-												<span class="invoice_valu">888,888,888</span>
-											</td>
-										</tr>
-										<tr>
-											<td>4</td>
-											<td>3팀</td>
-											<td>난다요</td>
-											<td>맑은소리샘</td>
-											<td>파란소리샘</td>
-											<td>220-87-07893</td>
-											<td>paransori</td>
-											<td>
-												<label class="label label-default">Dc</label>
-											</td>
-											<td>입금</td>
-											<td>15-06-15</td>
-											<td>188,888,888</td>
-											<td>
-												<span class="invoice_valu">888,888,888</span>
-											</td>
-										</tr>
-										<tr>
-											<td>5</td>
-											<td>마1팀</td>
-											<td>백창인</td>
-											<td>아이디어키</td>
-											<td>아이디어키</td>
-											<td>220-87-07893</td>
 											<td>ideakey</td>
-											<td>
-												<label class="label label-default">Dc</label>
-											</td>
-											<td>정산</td>
-											<td>15-06-18</td>
+											<td>충전</td>
 											<td>888,888,888</td>
+											<td>3%</td>
+											<td>888,888</td>
 											<td>
-												<span class="invoice_valu">888,888,888</span>
+												<a href="#viewModal" data-toggle="modal" class="btn btn-xs btn-primary" onclick="fnBusinessInfo(53);">발행정보&확인</a>
 											</td>
-										</tr></tr>
+										</tr>
 
 									</tbody>
 								</table>
@@ -334,7 +259,67 @@
 
 		</div><!-- ./wrapper -->
 
+<!-- 모달 -->
+<div id="viewModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+	<div class="modal-dialog modal-lg">
+		<!-- #DEV 옆의 class 중 moadl-lg를 제거하면 모달 사이즈가 작아짐니다. -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 id="myModalLabel">[ 아이디어키 ] 사업자 정보</h4>
+			</div>
+			<div class="modal-body">
+				<!-- 모달 바디 -->
+				<div class="row">
 
+
+					<div class="col-xs-12">
+						<div class="info-box">
+							<span class="info-box-icon bg-aqua"><i class="fa fa-building-o"></i></span>
+							<div class="info-box-content ">
+								<span class="pull-right">
+									담당자 :<br/>
+									<strong>기획개발팀</strong> <br/>
+									<strong>백창인</strong> <br/><br/>
+									위임일 : <br/>
+									<strong>2015-06-16</strong> <br/><br/>
+									위임유형 : <br/>
+									<strong>청구형 발행</strong>
+								</span>
+								<span>
+									업체명 : <strong>아이디어키</strong> <br/>
+									사업자 등록번호 : <strong>220-87-07893</strong> <br/>
+									대표자명 : <strong>안정윤</strong> <br/>
+									업 태 : <strong>서비스</strong> <br/>
+									종 목 : <strong>온라인 광고</strong> <br/>
+									주 소 : <strong>서울시 강남구 대치4동 891-44 노벨빌딩 7층</strong> <br/><br/>
+									계산서 담당자명 : <strong>백창인</strong> <br/>
+									계산서 담당자 메일 주소 : <strong>soo@ideakey.co.kr</strong> <br/>
+									계산서 담당자 휴대폰번호 : <strong>010-6855-2486</strong> <br/>
+									계산서 담당자 연락처 : <strong>070-7663-0937</strong> <br/>
+									사업자등록증 : <a href="#" class="btn btn-xs btn-info">다운로드</a>
+								</span>
+							</div>
+							<!-- /.info-box-content -->
+						</div>
+						<!-- /.info-box -->
+					</div>
+
+
+					<div class="form-group col-xs-12">
+						<label>광고주 메모</label>
+						<textarea class="form-control" rows="3" placeholder="회계팀 전용 메모..."></textarea>
+						<div class="jmt5 btn btn-default btn-xs pull-right"> 메모 저장 </div>
+					</div>
+				</div>
+				<!-- // 모달 바디 -->
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="btn btn-primary" data-dismiss="modal">확인</a>
+			</div>
+		</div>
+	</div>
+</div><!-- //모달 -->
 
 		<!-- REQUIRED JS SCRIPTS -->
 
