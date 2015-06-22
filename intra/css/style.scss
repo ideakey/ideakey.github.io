@@ -406,6 +406,7 @@ table {
     }
   }
 }
+
 /* 세금계산서 발행 리스트 커스텀 */
 .invoice_list {
   table {
@@ -457,8 +458,21 @@ table {
   } // table
 } // .rebate_list
 
+/* 리베이트 - 모달 커스텀 */
+#viewModal {
+  textarea {
+ background-image: linear-gradient(#dbf6f6, white 30px, white);
 
 
+
+    /* line-height: 21px; */
+    /* background-color: #ff0; */
+    /* background-position: top; */
+
+  }
+}
+
+/* 리베이트 현황 리스트 커스텀 */
 
 
 

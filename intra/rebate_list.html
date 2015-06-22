@@ -404,8 +404,7 @@
 
 					<div class="form-group col-xs-12">
 						<label>리베이트 메모</label>
-						<input type="text" class="col-xs-12" placeholder="리베이트 요약 내용">
-						<textarea class="form-control" rows="3" placeholder="리베이트 상세 내용"></textarea>
+						<textarea class="form-control" rows="5" placeholder="첫줄의 내용은 요약으로 노출됩니다."></textarea>
 						<div class="jmt5 btn btn-default btn-xs pull-right"> 메모 저장 </div>
 					</div>
 				</div>
@@ -451,6 +450,7 @@
 						"search": "검색 _INPUT_"
 		      }
 				});
+
 			});
 
 			// 체크박스 클릭시 엑션 미리보기용 JS 실개발시 작제
@@ -463,6 +463,11 @@
 				}
 				$(".test_check_td").addClass(x);
 			});
+
+			$('#viewModal').modal({
+          // show: true // 모달 뜨게
+          show: true
+      })
 
 		</script>
 	</body>
