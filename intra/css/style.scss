@@ -458,18 +458,17 @@ table {
   } // table
 } // .rebate_list
 
-/* 리베이트 - 모달 커스텀 */
+/* 리베이트 - 모달  텍스트 에어리어 커스텀 */
 #viewModal {
   textarea {
- background-image: linear-gradient(#dbf6f6, white 30px, white);
+      background-image: -webkit-linear-gradient(#dbf6f6, white 27px, #eee 28px, #fff 29px);
+      background-image: -o-linear-gradient(#dbf6f6, white 27px, #eee 28px, #fff 29px);
+      background-image: linear-gradient(#dbf6f6, white 27px, #eee 28px, #fff 29px);
 
+      font-size: 14px;
+      line-height: 20px;
 
-
-    /* line-height: 21px; */
-    /* background-color: #ff0; */
-    /* background-position: top; */
-
-  }
+    }
 }
 
 /* 리베이트 현황 리스트 커스텀 */

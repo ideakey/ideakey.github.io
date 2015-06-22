@@ -295,12 +295,13 @@ table.ae td:nth-child(3) {
 .rebate_list table tbody tr td:nth-child(10) {
   width: 100px; }
 
-/* 리베이트 - 모달 커스텀 */
+/* 리베이트 - 모달  텍스트 에어리어 커스텀 */
 #viewModal textarea {
-  background-image: linear-gradient(#dbf6f6, white 30px, white);
-  /* line-height: 21px; */
-  /* background-color: #ff0; */
-  /* background-position: top; */ }
+  background-image: -webkit-linear-gradient(#dbf6f6, white 27px, #eee 28px, #fff 29px);
+  background-image: -o-linear-gradient(#dbf6f6, white 27px, #eee 28px, #fff 29px);
+  background-image: linear-gradient(#dbf6f6, white 27px, #eee 28px, #fff 29px);
+  font-size: 14px;
+  line-height: 20px; }
 
 /* 리베이트 현황 리스트 커스텀 */
 /* 공지사항 리스트 커스텀 */
