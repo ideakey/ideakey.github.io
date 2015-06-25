@@ -19,6 +19,16 @@ a {
     font-weight: bold; }
 
 /* ---- 기본 항목 ----------------------------- */
+/* 차트 관련 CSS */
+.chart i.color1 {
+  color: #038CB8; }
+.chart i.color2 {
+  color: #D1D6DE; }
+.chart span {
+  font-size: 11px;
+  color: #999; }
+
+/* // 차트 관련 CSS */
 .user-panel {
   height: 70px;
   color: #fff; }
