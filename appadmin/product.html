@@ -79,7 +79,7 @@
 						<!-- 실 메뉴 시작 -->
 						<!-- <li class="active"><a href="#"><i class='fa fa-dashboard'></i> <span>Dashboard</span></a></li> -->
 						<li class="active"><a href="#"><i class='fa fa-user'></i> <span>방문자 트래킹</span></a></li>
-						<li><a href="#"><i class='fa fa-cube'></i> <span>상품 트래킹</span></a></li>
+						<li><a href="#"><i class='fa fa-cube'></i> <span>트래킹</span></a></li>
 						<li><a href="#"><i class='fa fa-comments'></i> <span>푸시 발송하기</span></a></li>
 						<li><a href="#"><i class='fa fa-comments-o'></i> <span>푸시 트레킹</span></a></li>
 
@@ -110,7 +110,7 @@
 				<!-- Content Header (Page header) -->
 				<section class="content-header">
 					<h1>
-						상품 트레킹 요약 <!-- 메인 타이틀 -->
+						트레킹 요약 <!-- 메인 타이틀 -->
 					</h1>
 					<ol class="breadcrumb">
 						<li><a href="#"><i class="fa fa-dashboard"></i>맑은소리샘</a></li>
@@ -124,27 +124,68 @@
 					<!-- Your Page Content Here -->
           <div class="row">
 
-            <div class="col-lg-3 col-xs-6">
-							<div class="box box-info">
+						<div class="col-xs-12">
+							<div class="box box-default box-solid collapsed-box">
+								<div class="box-header with-border">
+									<h3 class="box-title">상품 파라미터 & 관심 페이지 등록</h3>
+									<div class="box-tools pull-right">
+										<button class="btn btn-box-tool" data-widget="collapse" ><i class="fa fa-plus"></i></button>
+									</div>
+								</div> <!-- .box-header -->
+								<div class="box-body">
+									<!-- 트레킹할 상품 코드 & url 입력 -->
+									<div class="row">
+										<div class="col-md-3 col-xs-12">
+											<div class="input-group">
+		                    <span class="input-group-addon"><i class="fa fa-cube"></i></span>
+		                    <input type="text" class="form-control" placeholder="상품파라미터 입력">
+											</div>
+										</div>
+										<div class="col-md-offset-1 col-md-8 col-xs-12">
+											<div class="row">
+												<div class="col-md-4">
+													<div class="input-group">
+				                    <span class="input-group-addon"><i class="fa fa-tag"></i></span>
+				                    <input type="text" class="form-control" placeholder="페이지 제목 입력">
+													</div>
+												</div>
+												<div class="col-md-8">
+													<div class="input-group">
+				                    <span class="input-group-addon"><i class="fa fa-link"></i></span>
+				                    <input type="text" class="form-control" placeholder="관심 페이지 url입력">
+				                  </div>
+												</div>
+											</div>
+										</div>
+ 									</div>
+									<div class="jmt5 btn btn-default btn-xs pull-right"> 상품 파라미터 & 관심 페이지 저장 </div>
+									<!-- // 트레킹할 상품 코드 & url 입력 -->
+
+								</div>
+							</div> <!-- .box -->
+						</div> <!-- .col -->
+
+            <div class="col-lg-3 col-md-6 col-xs-12">
+							<div class="box box-info box-solid">
 		            <div class="box-header with-border">
-		              <h3 class="box-title">오늘의 인기 상품 트래킹 TOP10</h3>
+		              <h3 class="box-title">오늘의 인기 상품 TOP10</h3>
 		              <div class="box-tools pull-right">
 		                <button class="btn btn-box-tool" data-widget="collapse" ><i class="fa fa-minus"></i></button>
 		              </div>
 		            </div>
 		            <div class="box-body">
-		              <ol>
-		              	<li>1129</li>
-		              	<li>3133</li>
-		              	<li>2132</li>
-		              	<li>5324</li>
-		              	<li>1129</li>
-		              	<li>3133</li>
-		              	<li>2132</li>
-		              	<li>5324</li>
-		              	<li>2132</li>
-		              	<li>5324</li>
-		              </ol>
+									<ol>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">1231</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">미디엄 썸머 니트 OPS</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">3131</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">언발란스 페럴 티</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">1231</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">발란스 브엠웨어</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">2121</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">뉴발란스 탱크탑 가디건</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">2132</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">올드팝 오리지널</a></li>
+									</ol>
 		            </div><!-- /.box-body -->
 		            <div class="box-footer">
 		              Footer
@@ -152,26 +193,99 @@
 							</div>
             </div><!-- ./col -->
 
-            <div class="col-lg-6 col-xs-12">
-              <!-- small box -->
-              <div class="small-box bg-green">
-                <div class="inner">
-                  <h3>530</h3>
-                  <p>오늘 방문자</p>
-                </div>
-                <div class="icon">
-                  <i class="fa fa-user"></i>
-                </div>
-                <a href="#" class="small-box-footer">시간대별 추이 확인 <i class="fa fa-arrow-circle-right"></i></a>
-              </div>
+            <div class="col-lg-3 col-md-6 col-xs-12">
+							<div class="box box-success box-solid">
+		            <div class="box-header with-border">
+		              <h3 class="box-title">오늘의 인기 페이지 top10</h3>
+		              <div class="box-tools pull-right">
+		                <button class="btn btn-box-tool" data-widget="collapse" ><i class="fa fa-minus"></i></button>
+		              </div>
+		            </div>
+		            <div class="box-body">
+									<ol>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">index.html</a> <a href="#"><i class="fa fa-external-link"></i></a> <a href="#" data-toggle="tooltip" data-placement="top" title="앞으로 안보기"><i class="fa fa-times-circle color3"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">order.php</a> <a href="#"><i class="fa fa-external-link"></i></a> <a href="#" data-toggle="tooltip" data-placement="top" title="앞으로 안보기"><i class="fa fa-times-circle color3"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">inrto.php</a> <a href="#"><i class="fa fa-external-link"></i></a> <a href="#" data-toggle="tooltip" data-placement="top" title="앞으로 안보기"><i class="fa fa-times-circle color3"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">황바비 소개</a> <a href="#"><i class="fa fa-external-link"></i></a> </li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">바비걸 신체사이즈</a> <a href="#"><i class="fa fa-external-link"></i></a> </li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">Q & A</a> <a href="#"><i class="fa fa-external-link"></i></a> </li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">ttesst.html</a> <a href="#"><i class="fa fa-external-link"></i></a> <a href="#" data-toggle="tooltip" data-placement="top" title="앞으로 안보기"><i class="fa fa-times-circle color3"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">board.php?id=wtf&121</a> <a href="#"><i class="fa fa-external-link"></i></a> </li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">2132</a> <a href="#"><i class="fa fa-external-link"></i></a> <a href="#" data-toggle="tooltip" data-placement="top" title="앞으로 안보기"><i class="fa fa-times-circle color3"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">올드팝 오리지널</a> <a href="#"><i class="fa fa-external-link"></i></a> </li>
+									</ol>
+		            </div><!-- /.box-body -->
+		            <div class="box-footer">
+		              Footer
+		            </div><!-- /.box-footer-->
+							</div>
             </div><!-- ./col -->
+
+            <div class="col-lg-3 col-md-6 col-xs-12">
+							<div class="box box-warning box-solid">
+		            <div class="box-header with-border">
+		              <h3 class="box-title">누적 인기 상품 TOP10</h3>
+		              <div class="box-tools pull-right">
+		                <button class="btn btn-box-tool" data-widget="collapse" ><i class="fa fa-minus"></i></button>
+		              </div>
+		            </div>
+		            <div class="box-body">
+									<ol>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">1231</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">미디엄 썸머 니트 OPS</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">3131</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">언발란스 페럴 티</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">1231</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">발란스 브엠웨어</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">2121</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">뉴발란스 탱크탑 가디건</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">2132</a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">올드팝 오리지널</a></li>
+									</ol>
+		            </div><!-- /.box-body -->
+		            <div class="box-footer">
+		              Footer
+		            </div><!-- /.box-footer-->
+							</div>
+            </div><!-- ./col -->
+
+            <div class="col-lg-3 col-md-6 col-xs-12">
+							<div class="box box-danger box-solid">
+		            <div class="box-header with-border">
+		              <h3 class="box-title">누적 인기 페이지 TOP10</h3>
+		              <div class="box-tools pull-right">
+		                <button class="btn btn-box-tool" data-widget="collapse" ><i class="fa fa-minus"></i></button>
+		              </div>
+		            </div>
+		            <div class="box-body">
+									<ol>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">index.html</a> <a href="#"><i class="fa fa-external-link"></i></a> <a href="#" data-toggle="tooltip" data-placement="top" title="앞으로 안보기"><i class="fa fa-times-circle color3"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">order.php</a> <a href="#"><i class="fa fa-external-link"></i></a> <a href="#" data-toggle="tooltip" data-placement="top" title="앞으로 안보기"><i class="fa fa-times-circle color3"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">inrto.php</a> <a href="#"><i class="fa fa-external-link"></i></a> <a href="#" data-toggle="tooltip" data-placement="top" title="앞으로 안보기"><i class="fa fa-times-circle color3"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">황바비 소개</a> <a href="#"><i class="fa fa-external-link"></i></a> </li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">바비걸 신체사이즈</a> <a href="#"><i class="fa fa-external-link"></i></a> </li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">Q & A</a> <a href="#"><i class="fa fa-external-link"></i></a> </li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">ttesst.html</a> <a href="#"><i class="fa fa-external-link"></i></a> <a href="#" data-toggle="tooltip" data-placement="top" title="앞으로 안보기"><i class="fa fa-times-circle color3"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">board.php?id=wtf&121</a> <a href="#"><i class="fa fa-external-link"></i></a> </li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">2132</a> <a href="#"><i class="fa fa-external-link"></i></a> <a href="#" data-toggle="tooltip" data-placement="top" title="앞으로 안보기"><i class="fa fa-times-circle color3"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="left" title="방문자 : 323명">올드팝 오리지널</a> <a href="#"><i class="fa fa-external-link"></i></a> </li>
+									</ol>
+		            </div><!-- /.box-body -->
+		            <div class="box-footer">
+		              Footer
+		            </div><!-- /.box-footer-->
+							</div>
+            </div><!-- ./col -->
+
+
+
           </div><!-- /.row -->
 
 
 					<!-- 요일별 방문 추이 -->
 					<div class="box box-primary chart">
 						<div class="box-header with-border">
-							<h3 class="box-title">요일별 방문 추이 (전주 비교)</h3>
+							<h3 class="box-title">[특가 세일 페이지] 방문자 전주 비교</h3>
 							<div class="box-tools pull-right">
 								<span><i class="fa fa-square color1"></i> 금주</span>
 								<span><i class="fa fa-square color2"></i> 전주</span>
