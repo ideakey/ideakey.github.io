@@ -31,6 +31,10 @@ a {
   color: #999; }
 
 /* // 차트 관련 CSS */
+/* 아이콘 색 */
+i.color3 {
+  color: #FE9B2F; }
+
 .user-panel {
   height: 70px;
   color: #fff; }
