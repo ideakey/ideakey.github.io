@@ -61,9 +61,14 @@ i.color3 {
   color: #fff;
 }
 // 광고주명 코드, 로그아웃 내용 나오는곳
-i.color3 {
-  color: #FE9B2F;
+
+/* 푸시 메세지 발송 이미지 미리보기 */
+blockquote {
+  img {
+    width: 75%;
+  }
 }
+/* 푸시 메세지 발송 이미지 미리보기 */
 
 
 
