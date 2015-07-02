@@ -44,4 +44,10 @@ blockquote img {
   width: 75%; }
 
 /* 푸시 메세지 발송 이미지 미리보기 */
+/* 푸시 공지사항 속 이미지 사이즈 */
+.push_sample img {
+  width: 100%;
+  border: 0; }
+
+/* 푸시 공지사항 속 이미지 사이즈 */
 /* sass */
