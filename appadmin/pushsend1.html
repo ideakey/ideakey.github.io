@@ -80,8 +80,8 @@
 						<!-- <li class="active"><a href="#"><i class='fa fa-dashboard'></i> <span>Dashboard</span></a></li> -->
 						<li><a href="index.html"><i class='fa fa-user'></i> <span>방문자 트래킹</span></a></li>
 						<li><a href="product.html"><i class='fa fa-cube'></i> <span>트래킹</span></a></li>
-						<li><a href="pushsend.html"><i class='fa fa-comments'></i> <span>푸시 발송하기</span></a></li>
-						<li class="active"><a href="pushtracking.html"><i class='fa fa-comments-o'></i> <span>푸시 트레킹</span></a></li>
+						<li class="active"><a href="pushsend.html"><i class='fa fa-comments'></i> <span>푸시 발송하기</span></a></li>
+						<li><a href="pushtracking.html"><i class='fa fa-comments-o'></i> <span>푸시 트레킹</span></a></li>
 
 						<!-- //실 메뉴 시작 -->
 
@@ -129,70 +129,126 @@
 						<!-- START ACCORDION -->
 					  <div class="col-md-9">
 					    <div class="box box-solid">
+								<!-- #DEV 특정 목적으로 푸시를 발송할때 만 사용 -->
+								<div class="box-header">
+									<blockquote>
+										<p>장기 미접속자 대상 푸시 발송 </p>
+										<small> 푸시 대상 208명 </small>
+									</blockquote>
+								</div>
+								<!--// #DEV 특정 목적으로 푸시를 발송할때 만 사용 -->
 					      <div class="box-body">
 					        <div class="box-group" id="accordion">
 					          <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
-					          <div class="panel box box-solid">
+					          <div class="panel box box-info">
 					            <div class="box-header with-border">
 					              <h4 class="box-title">
 					                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-					                  푸시 메세지 작성하기
+					                  <span class="badge bg-orange">1</span> 푸시 메세지 작성하기
 					                </a>
 					              </h4>
 					            </div>
-					            <div id="collapseOne" class="panel-collapse collapse ">
+					            <div id="collapseOne" class="panel-collapse collapse in">
 					              <div class="box-body">
 
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+													  <div class="form-group">
+													    <label for="exampleInputEmail1">제목 입력</label>
+													    <input type="email" class="form-control" id="" placeholder="푸시 공지 제목">
+													  </div>
+													  <div class="form-group">
+													    <label for="exampleInputPassword1">내용 입력 ( 2000 자 이내 )</label>
+													    <textarea class="form-control" rows="4"></textarea>
+													  </div>
+														<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="btn btn-info pull-right">다음</a>
 
 					              </div><!-- .box-body -->
 					            </div>
 					          </div>
-					          <div class="panel box box-solid box-info">
+					          <div class="panel box box-success">
 					            <div class="box-header with-border">
 					              <h4 class="box-title">
 					                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-					                   이미지 추가하기 (선택)
+					                  <span class="badge bg-orange">2</span> 이미지 추가하기 (선택)
 					                </a>
 					              </h4>
 					            </div>
 					            <div id="collapseTwo" class="panel-collapse collapse">
 					              <div class="box-body">
 
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, dolores id eius repellat repudiandae eos vero doloribus reiciendis suscipit odit et nostrum, delectus at dolore rem sit pariatur quae nihil.
+													<div class="form-group">
+														<label for="exampleInputEmail1">노티 이미지 url입력 ( 최적 이미지 사이즈 720px * 350px )</label>
+														<input type="email" class="form-control" id="" placeholder="추가 이미지 url 입력">
+													</div>
+													<div class="form-group">
+														<label for="exampleInputFile">이미지 업로드시 파일 선택</label>
+
+														<div class="input-group">
+					                    <input type="file" id="exampleInputFile" class="form-control">
+					                    <div class="input-group-addon btn btn-success" id="uploadbutton"> 업로드 </div>
+					                  </div>
+													</div>
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="btn btn-info">이전</a>
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="btn btn-success pull-right ">다음</a>
 
 					              </div> <!-- .box-body -->
 					            </div>
 					          </div>
-					          <div class="panel box box-solid">
+					          <div class="panel box box-warning">
 					            <div class="box-header with-border">
 					              <h4 class="box-title">
 					                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-					                  랜딩 Url 입력하기 (선택)
+					                  <span class="badge bg-orange">3</span> 랜딩 Url 입력하기 (선택)
 					                </a>
 					              </h4>
 					            </div>
 					            <div id="collapseThree" class="panel-collapse collapse">
 					              <div class="box-body">
 
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quam, animi culpa libero suscipit debitis eius voluptas adipisci incidunt placeat, velit aspernatur veniam at cumque alias quidem inventore possimus corrupti!
+													<div class="form-group">
+														<label for="exampleInputEmail1">클릭시 연결될 랜딩 url </label>
+														<input type="email" class="form-control" id="" placeholder="랭딩 url입력">
+													</div>
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="btn btn-success">이전</a>
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="btn btn-warning pull-right">다음</a>
 
 					              </div><!-- .box-body -->
 					            </div>
 					          </div>
-					          <div class="panel box box-solid">
+					          <div class="panel box box-primary">
 					            <div class="box-header with-border">
 					              <h4 class="box-title">
 					                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-					                  푸시 메세지 발송
+					                  <span class="badge bg-orange">4</span> 푸시 메세지 발송
 					                </a>
 					              </h4>
 					            </div>
 					            <div id="collapseFour" class="panel-collapse collapse">
 					              <div class="box-body">
+													<div class="row">
+														<div class="col-md-8">
+															<blockquote>
+																<p>제목 내용이 블라블라</p>
+																<p>내용 내용이 블라블라 블라블라 <br/ >블라 블라 블라섬 블라블라 불라불라 ~</p>
+																<img src="push_img.jpg" alt="푸시이미지 미리보기"/>
+															</blockquote>
+														</div>
+														<div class="col-md-4">
 
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam doloremque a nobis earum facere eius optio magnam laudantium asperiores quae! Sequi magnam omnis nobis quis possimus corporis. Illum, voluptatem, quam?
+															<!-- small box -->
+								              <div class="small-box bg-primary">
+								                <div class="inner">
+								                  <h3>124,333</h3>
+								                  <p>푸시 발송대상 수</p>
+								                </div>
+								                <div class="icon">
+								                  <i class="fa fa-comments"></i>
+								                </div>
+								              </div>
 
+															<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="btn btn-warning btn-lg btn-block">이전</a>
+															<a class="btn btn-success btn-lg btn-block"> 푸시 발송 ! </a>
+														</div>
+													</div>
 					              </div><!-- .box-body -->
 					            </div>
 					          </div>
