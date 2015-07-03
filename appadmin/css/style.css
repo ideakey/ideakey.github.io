@@ -40,8 +40,10 @@ i.color3 {
   color: #fff; }
 
 /* 푸시 메세지 발송 이미지 미리보기 */
-blockquote img {
-  width: 75%; }
+blockquote {
+  margin-bottom: -10px; }
+  blockquote img {
+    width: 75%; }
 
 /* 푸시 메세지 발송 이미지 미리보기 */
 /* 푸시 공지사항 속 이미지 사이즈 */
