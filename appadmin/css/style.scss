@@ -64,14 +64,14 @@ i.color3 {
 
 /* 푸시 메세지 발송 이미지 미리보기 */
 blockquote {
-  margin-bottom: -10px;
+  margin-bottom: 0;
   img {
-    width: 75%;
+    width: 85%;
   }
 }
 /* 푸시 메세지 발송 이미지 미리보기 */
 
-/* 푸시 공지사항 속 이미지 사이즈 */
+/* 푸시 공지사항 속 이미지 사이즈 */ 
 .push_sample {
   img {
     width: 100%;
@@ -80,17 +80,6 @@ blockquote {
 }
 /* 푸시 공지사항 속 이미지 사이즈 */
 
-/* 푸시 트래킹 미리보기 */
-.push_view {
-  width: 300px;
-  blockquote {
-    margin-bottom: 0;
-    img {
-      width: 100%;
-    }
-  }
-}
-/* //푸시 트래킹 미리보기 */
 
 
 /* sass */
