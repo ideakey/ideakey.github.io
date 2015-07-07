@@ -52,4 +52,13 @@ blockquote {
   border: 0; }
 
 /* 푸시 공지사항 속 이미지 사이즈 */
+/* 푸시 트래킹 미리보기 */
+.push_view {
+  width: 300px; }
+  .push_view blockquote {
+    margin: 0; }
+    .push_view blockquote img {
+      width: 100%; }
+
+/* //푸시 트래킹 미리보기 */
 /* sass */
