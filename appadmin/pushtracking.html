@@ -135,7 +135,7 @@
 					          <div class="panel box box-solid">
 					            <div class="box-header with-border">
 				                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" >
-				                  <span class="pull-left">[제목의 영역이 블라블라 블라] 내용의 영역이 블라블라 블라 블라 블라 블ㄹ라 초특가 세일!</span>
+				                  <span class="pull-left">[8888] [제목의 영역이 블라블라 블라] 내용의 영역이 블라블라 블라 블라 블라 블ㄹ라 초특가 세일!</span>
 													<span class="pull-right">[05/08 14:04]</span>
 				                </a>
 					            </div>
@@ -148,14 +148,14 @@
 					            </div>
 					          </div>
 
-					          <div class="panel box box-solid push_tracking box-info">
+					          <div class="panel box box-solid push_tracking">
 					            <div class="box-header with-border">
 				                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-													<span class="pull-left">[요기가 알짜 세일 ] 여기를 눌러 주시라 주시라!!</span>
+													<span class="pull-left">[8888] [요기가 알짜 세일 ] 여기를 눌러 주시라 주시라!!</span>
 													<span class="pull-right">[05/08 14:04]</span>
 				                </a>
 					            </div>
-					            <div id="collapseTwo" class="panel-collapse collaps e">
+					            <div id="collapseTwo" class="panel-collapse collapse">
 					              <div class="box-body">
 
 													<div class="col-md-4">
@@ -170,7 +170,7 @@
 														<!-- 푸시추이 -->
 														<div class="box box-solid chart">
 															<div class="box-header with-border">
-																<h3 class="box-title">푸시확인 카운터</h3>
+																<h3 class="box-title">푸시 확인 카운터</h3>
 															</div>
 															<div class="box-body">
 																<div class="chart">
@@ -199,7 +199,7 @@
 					          <div class="panel box box-solid">
 					            <div class="box-header with-border">
 				                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-													<span class="pull-left">[제목의 영역이 블라블라 블라] 내용의 영역이 블라 블라 블라 블라 블라 블ㄹ라 초특가 세일!</span>
+													<span class="pull-left">[8888] [제목의 영역이 블라블라 블라] 내용의 영역이 블라 블라 블라 블라 블라 블ㄹ라 초특가 세일!</span>
 													<span class="pull-right">[05/08 14:04]</span>
 				                </a>
 					            </div>
@@ -211,10 +211,27 @@
 					              </div><!-- .box-body -->
 					            </div>
 					          </div>
+
 					          <div class="panel box box-solid">
 					            <div class="box-header with-border">
 				                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-													<span class="pull-left">[제목의 영역이 블라블라 블라] 내용의 영역이 블라블라 블라 블라 블라 블ㄹ라 초특가 세일!</span>
+													<span class="pull-left">[8888] [제목의 영역이 블라블라 블라] 내용의 영역이 블라블라 블라 블라 블라 블ㄹ라 초특가 세일!</span>
+													<span class="pull-right">[05/08 14:04]</span>
+				                </a>
+					            </div>
+					            <div id="collapseFour" class="panel-collapse collapse">
+					              <div class="box-body">
+
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam doloremque a nobis earum facere eius optio magnam laudantium asperiores quae! Sequi magnam omnis nobis quis possimus corporis. Illum, voluptatem, quam?
+
+					              </div><!-- .box-body -->
+					            </div>
+					          </div>
+
+					          <div class="panel box box-solid">
+					            <div class="box-header with-border">
+				                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+													<span class="pull-left">[8888] [제목의 영역이 블라블라 블라] 내용의 영역이 블라블라 블라 블라 블라 블ㄹ라 초특가 세일!</span>
 													<span class="pull-right">[05/08 14:04]</span>
 				                </a>
 					            </div>
@@ -229,10 +246,13 @@
 					        </div>
 					      </div><!-- /.box-body -->
 					    </div><!-- /.box -->
+
+							<div class="col-md-2 col-xs-5 btn btn-default">이전</div>
+							<div class="col-md-2 col-md-offset-8 col-xs-5 col-xs-offset-2 btn btn-info ">다음</div>
+
 					  </div><!-- /.col -->
 
 						<!-- END ACCORDION -->
-
 
 
 
@@ -279,6 +299,11 @@
 		<script src="plugins/Lstyle.min.js"></script>
 
 		<script>
+		// 클릭 예제
+		$(".push_tracking").click(function () {
+			$(this).addClass("box-info");
+		});
+
 
 		$(function () {
 
@@ -409,6 +434,9 @@
 		// chart_2 내용
 
 			});
+
+
+
 	</script>
 	</body>
 </html>
