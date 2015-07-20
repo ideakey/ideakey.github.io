@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+        <title>아이디어키</title> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />	
+        <link rel="stylesheet" type="text/css" href="css/request.css" />
+     <script>
+   	 
+	    $(function(){//제이쿼리시작
+	 $('.C_totop').click(function(){
+    $('body,html').animate({
+     'scrollTop':0
+    },2000)
+   })
+   var spotarr = [];  
+
+   $('body section').each(function(i,e){
+
+    spotarr.push($(e).offset().top)
+
+   })
+
+   
+   $(window).scroll(function(){
+
+    var sct= $(window).scrollTop()  
+
+    $('body section').each(function(i,e){
+
+     bg(sct)
+
+    })
+
+
+
+   })
+
+ 
+   $(window).trigger('scroll')
+
+   function bg(x){
+
+    if(x > 200){
+
+     $('.C_totop').css({
+
+      'opacity':'1'
+
+     })
+
+
+    }else{
+
+     $('.C_totop').css({
+
+      'opacity':'0'
+
+
+     })
+
+
+
+    }
+
+   }
+
+
+
+    });//제이쿼리끝  
+    </script>
+</head>
+
+<body>
+<div id="wrap">
+    <div id="header">
+     <?include "./menubar.html"; ?>
+<!--상단이미지-->   
+   	  <div id="main">
+        	<img src="images/request_top.png" />
+        </div>
+      <div id="mainline">
+        	<img src="images/request_topline.png" />
+        </div>
+
+<!--폼 내용-->     
+      <form action="" method="get">
+      <div id="form">
+      
+        <div id="form1">
+        	<li><img src="images/request_1.png" width="182" height="91" /></li>
+        	<li><input name="1" type="text" class="form1" /></li>
+        </div>
+        <div id="form2">
+        	<li><img src="images/request_2.png" width="182" height="91" /></li>
+        	<li><input name="2" type="text" class="form2" /></li>
+        </div>
+        <div id="form3">
+        	<li><img src="images/request_3.png" width="181" height="90" /></li>
+            <li><input name="3" type="text" class="form3" /></li>
+        </div>
+        <div id="form4">
+        	<li><img src="images/request_4.png" /></li>
+         	<li><input name="4" type="tel" class="form4" /> &nbsp;
+           	  <input name="4" type="tel" class="form4" /> &nbsp;
+              <input name="4" type="tel" class="form4" />
+            </li>
+        </div>
+        <div id="form5">
+        	<li><img src="images/request_5.png" width="181" /></li>
+            <li><input name="5" type="text" class="form5" /></li>
+        </div>
+        <div id="form6">
+        	<li><img src="images/request_6.png" width="182" /></li>
+            <li><input name="6" type="text" class="form6" /></li>
+        </div>
+        <div id="form7">
+        	<li><img src="images/request_6_1.png" width="392" height="52" /></li>
+            <li><input name="ing" type="checkbox" value="ing" class="form7" />
+            	<img src="images/request_ing.png" />
+            </li>
+                                   
+        </div>        
+		<div id="form8">
+        	<li><img src="images/request_7.png" /></li> 
+        	 <br />
+            <li><input name="" type="checkbox" value="" class="form8" />
+            	<img src="images/request_11.png" />
+            </li>
+             <li><input name="" type="checkbox" value="" class="form88" />
+            	<img src="images/request_12.png" />
+            </li>
+             <li><input name="" type="checkbox" value="" class="form88" />
+            	<img src="images/request_13.png" />
+            </li>
+        </div>   	
+        <div id="white"></div>	
+		<div id="form81">
+            <li><input name="" type="checkbox" value="" class="form81" />
+            	<img src="images/request_14.png" />
+            </li>
+             <li><input name="" type="checkbox" value="" class="form89" />
+            	<img src="images/request_15.png" />
+            </li>
+             <li><input name="" type="checkbox" value="" class="form89" />
+            	<img src="images/request_16.png" />
+            </li>
+        </div>
+		<div id="form82">
+            <li><input name="" type="checkbox" value="" class="form82" />
+            	<img src="images/request_17.png" />
+            </li>
+        </div>  
+        <div id="form9">
+            <li><img src="images/request_8.png"></li>
+            <li><textarea name="" cols="" rows="" class="form9"></textarea></li>
+        </div>
+        
+        <div id="form10">
+            <li><img src="images/request_9.png"></li>
+            <li><textarea name="" readonly="readonly" cols="" rows="" class="form10">
+(주)아이디어키는 고객님의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호"에 관한 법률을 준수하고 있습니다.
+
+(주) 아이디어키는 개인정보취급방침을 통하여 고객님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.
+
+(주) 아이디어키는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.
+
+ο 본 방침은 : 2008 년 10 월 01 일부터 시행됩니다.
+
+수집하는 개인정보의 항목
+(주) 아이디어키는 광고견적, 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.
+
+ο 수집항목 : 홈페이지 url, 업체명, 담당자명, 연락처, E-mail, 광고예산, 광고진행여부
+ο 개인정보 수집방법 : 아이디어키 홈페이지, 아이디어키 페이스북, 아이디어키의 keypage
+
+개인정보의 수집 및 이용목적
+(주) 아이디어키는 수집한 개인정보를 다음의 목적을 위해 활용합니다.
+
+ο 서비스 제공에 관한 계약 이행 및 서비스 제공
+ο 광고 진행 컨설팅
+ο 불만처리 등 민원처리
+
+개인정보의 보유 및 이용기간
+(주) 아이디어키는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.</textarea></li>
+            <li>
+                <input name="" type="checkbox" class="form101" />
+                <img src="images/44.png" />    
+            </li>
+      </div>
+          
+      </div>      
+<!--문의하기버튼-->         
+      <div id="underbar">
+      	<img src="images/request_underline.png" />
+          <a href="#"><img src="images/request_bt.png" /></a>
+      </div>
+      </form>
+    <br><br></div>
+                <!--top버튼-->
+        ​<div class="C_totop">
+
+   <span>TOP</span>
+        </div>
+            
+     <!--하단정보-->   
+<?include "./footer.html"; ?>
+</div>  
+</body>
+</html>

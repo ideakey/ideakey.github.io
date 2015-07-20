@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{padding:0; margin:0;}
+img{border:none;}
+caption{
+ width:640px; height:10px;}
+caption span{
+ display:none;
+}
+table{
+    display: inline;
+    margin: 0 auto;
+ border-collapse: collapse; 
+}
+td{
+ border-bottom: 1px solid #dfdeda;
+ text-align:center;
+ padding:10px 10px;
+  font-family:'Arial Narrow', Arial, sans-serif;font-size: 1.563em;
+}
+th{
+ height:40px;
+ padding:0px 0px;
+ font-size:18px;
+}
+th span{
+/*  border-right:1px solid #666; */
+ background: url(../../../%EC%9E%A5%EC%9D%80%EC%A7%80/Desktop/%EC%B9%98%EC%95%84%EA%B5%90%EC%A0%95%EA%BF%88%EC%B9%98%EA%B3%BC/images/bar7_1.png) no-repeat right 10px;
+  display:block;
+  padding:0px 0px 2px 0px;}
+.title{width:640px;height: 500px; margin:0 auto;text-align:center;}
+.aa{border-bottom: 1px solid #a79d84; border-top: 1px solid #a79d84;}
+.sun{width:640px;border-bottom: 1px solid #a79d84; border-top: 1px solid #a79d84;}
+.you_box{width:640px; height:100px;}
+
+#new{float: right}
+td{height: 30px;}
+.ell{width:380px;padding:0 5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;} 
+li{float:left;
+   text-align:center;
+ display: inline}
+.page{width:640px;
+	margin: 0px auto 0px auto;
+	text-align: center;
+font-family:'Arial Narrow', Arial, sans-serif;font-size: 2.5em;}
+.search{width:640px;
+	margin: 15px; auto 0px auto;
+	text-align: center;}
+.search_select{height:49px;font-family:'Arial Narrow', Arial, sans-serif;font-size: 1.313em;float:left; padding-left:8px;}
+.search_text{width:400px; height:45px; font-family:'Arial Narrow', Arial, sans-serif;font-size: 1.438em; float:left;}
+.search_icon{float:left; }
+#form{width:640px;height:120px; 
+	margin: 50px auto 0px auto;
+	text-align: center;}
