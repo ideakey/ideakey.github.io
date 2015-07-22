@@ -78,6 +78,7 @@ a:active {
 
 .top_menu {
   width: 640px;
+  height: 88px;
   margin: 0 auto;
   text-align: center; }
   .top_menu .header_logo {
@@ -102,12 +103,12 @@ a:active {
   font-weight: 700;
   font-size: 2.3em;
   line-height: 2.3em;
-  background: rgba(0, 0, 0, 0.7); }
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1; }
   .view_menu ul {
     padding: 10px; }
 
 footer {
-  width: 640px;
   margin: 0 auto; }
   footer .copyright {
     margin: 0 auto;
@@ -116,12 +117,16 @@ footer {
     color: #EAEAEA;
     padding: 20px 0 20px 10px;
     font-size: 18px;
-    line-height: 24px; }
+    line-height: 24px;
+    z-index: 2; }
   footer div {
     position: relative; }
     footer div .footer_pc {
       position: absolute;
       right: 0; }
+
+.subpage footer {
+  background: url(../images/main_bg.gif); }
 
 .slide {
   margin: 0 auto;
@@ -271,5 +276,21 @@ footer {
   background-image: url(../images/main_bg.gif);
   background-position: center  88px;
   background-repeat: repeat-x; }
+
+.sub_section .sub_title {
+  margin-bottom: 25px; }
+.sub_section figure {
+  margin: 0 auto;
+  width: 640px; }
+  .sub_section figure img {
+    margin-top: 40px; }
+  .sub_section figure figcaption {
+    width: 560px;
+    float: right;
+    text-align: left;
+    color: #6D6D6D;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600; }
 
 /* */
