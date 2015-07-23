@@ -292,5 +292,36 @@ footer {
     font-size: 20px;
     line-height: 30px;
     font-weight: 600; }
+.sub_section iframe {
+  margin-bottom: 30px; }
+.sub_section .direction {
+  width: 640px;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: left;
+  color: #6D6D6D;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600; }
+  .sub_section .direction strong {
+    color: #785f9e;
+    font-weight: bolder; }
+
+.C_totop {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  font-size: 24px;
+  color: #fff;
+  line-height: 75px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease; }
 
 /* */
