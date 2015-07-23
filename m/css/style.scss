@@ -298,7 +298,8 @@ footer {
 
 // 서브 페이지
 .sub_section {
-	// margin: 0 auto;
+	width: 640px;
+	margin: 0 auto;
 	.sub_title {
 		margin-bottom: 25px;
 	}
@@ -312,6 +313,7 @@ footer {
 		figcaption {
 			width: 560px;
 			float: right;
+			margin-right: 10px;
 			text-align: left;
 			color: #6D6D6D;
 			font-size: 20px;
@@ -319,16 +321,16 @@ footer {
 			font-weight: 600;
 		}
 	}
-	iframe {
+	iframe { // 지도 부분
 		margin-bottom: 30px;
 	}
 	.direction {
-		width: 640px;
+		width: 620px;
 		margin: 0 auto;
 		padding-top: 20px;
 		text-align: left;
 		color: #6D6D6D;
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 30px;
 		font-weight: 600;
 		strong {
@@ -336,7 +338,107 @@ footer {
 			font-weight: bolder;
 		}
 	}
-}
+	.list { // 게시판 리스트
+		width: 640px;
+		font-size: 28px;
+		line-height: 30px;
+		thead {
+			tr {
+				border-top: 1px solid #888;
+				border-bottom: 1px solid #888;
+				th {
+					height: 60px;
+				}
+			}
+		}
+		tbody {
+			tr {
+				border-bottom: 1px solid #ddd;
+				margin: 10px 0;
+				height: 60px;
+				&:nth-child(even) {
+					background: #f8f8f8;
+				}
+
+				td {
+					&:first-child {
+						width: 80px;
+						// background: #efefef;
+					}
+					&:nth-child(2) {
+						line-height: 60px;
+						width: 400px;
+						text-align: left;
+						display: block;
+						overflow: hidden;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+					}
+				}
+			}
+		}
+	} // table
+	//페이지 네비게이션
+	.pagination {
+		width: 640px;
+		margin-top: 60px;
+		thead {
+			tr {
+				border: none;
+				th {
+					a {
+						padding: 10px 20px;
+						border: 1px solid #ddd;
+						border-radius: 5px;
+					}
+				}
+				.pagination_number {
+					a {
+						border: none;
+					}
+				}
+			}
+		}
+	} // 페이지 네비게이션
+	.search { // 검색페이지
+		margin-top: 40px;
+		input {
+			width: 500px;
+			height: 46px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			background: #fff;
+			box-shadow: 1px 1px 0 #ddd;
+			text-align: center;
+			font-size: 30px;
+		}
+		img {
+			padding-bottom: 8px;
+		}
+	}
+	.view { // 보기페이지
+		margin-top: -25px;
+		width: 640px;
+		font-size: 28px;
+		line-height: 30px;
+		tr {
+			border-bottom: 1px solid #ccc;
+			td {
+				height: 60px;
+				&:first-child {
+					width: 150px;
+					// text-align: center;
+					background: #eee;
+				}
+				&:nth-child(2) {
+					text-align: left;
+					padding: 4px 4px 4px 20px;
+					font-size: 20px;
+				}
+			}
+		}
+	} //.view
+} // .sub_section
 // 서브 페이지
 // 탑 버튼
 .C_totop {
@@ -345,13 +447,13 @@ footer {
 	bottom: 80px;
 	width: 80px;
 	height: 80px;
+	opacity: 0;
 	background: rgba(0, 0, 0, 0.8);
 	border-radius: 50%;
 	font-size: 24px;
 	color: #fff;
 	line-height: 75px;
 	z-index: 9;
-	opacity: 0;
 	cursor: pointer;
 	-webkit-transition: 0.5s all ease ;
 	-o-transition: 0.5s all ease ;

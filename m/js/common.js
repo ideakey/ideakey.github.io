@@ -10,32 +10,19 @@ $(document).ready(function() {
     $('body,html').animate({
       'scrollTop': 0
     }, 2000)
-  })
+  });
 
-  var spotarr = [];
-  $('body section').each(function(i, e) {
-    spotarr.push($(e).offset().top)
-  })
+  // 200스크롤 진행시 탑 버튼 보이게
+  $ (window) .scroll (function() {
+    var  value = $ ( this ) .scrollTop ();   // 스크롤 값을 취득
 
-  $(window).scroll(function() {
-    var sct = $(window).scrollTop()
-    $('body section').each(function(i, e) {
-      bg(sct)
-    })
-  })
-
-  $(window).trigger('scroll')
-
-  function bg(x) {
-    if (x > 200) {
-      $('.C_totop').css({
-        'opacity': '1'
-      })
+    if ( value > 200 ) {
+      $(".C_totop").css("opacity","1");
     } else {
-      $('.C_totop').css({
-        'opacity': '0'
-      })
+      $(".C_totop").css("opacity","0");
     }
-  }
+  });
 
-}); //제이쿼리끝
+
+
+});

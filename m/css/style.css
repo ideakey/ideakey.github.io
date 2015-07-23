@@ -277,35 +277,104 @@ footer {
   background-position: center  88px;
   background-repeat: repeat-x; }
 
-.sub_section .sub_title {
-  margin-bottom: 25px; }
-.sub_section figure {
-  margin: 0 auto;
-  width: 640px; }
-  .sub_section figure img {
-    margin-top: 40px; }
-  .sub_section figure figcaption {
-    width: 560px;
-    float: right;
+.sub_section {
+  width: 640px;
+  margin: 0 auto; }
+  .sub_section .sub_title {
+    margin-bottom: 25px; }
+  .sub_section figure {
+    margin: 0 auto;
+    width: 640px; }
+    .sub_section figure img {
+      margin-top: 40px; }
+    .sub_section figure figcaption {
+      width: 560px;
+      float: right;
+      margin-right: 10px;
+      text-align: left;
+      color: #6D6D6D;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 600; }
+  .sub_section iframe {
+    margin-bottom: 30px; }
+  .sub_section .direction {
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 20px;
     text-align: left;
     color: #6D6D6D;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     font-weight: 600; }
-.sub_section iframe {
-  margin-bottom: 30px; }
-.sub_section .direction {
-  width: 640px;
-  margin: 0 auto;
-  padding-top: 20px;
-  text-align: left;
-  color: #6D6D6D;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 600; }
-  .sub_section .direction strong {
-    color: #785f9e;
-    font-weight: bolder; }
+    .sub_section .direction strong {
+      color: #785f9e;
+      font-weight: bolder; }
+  .sub_section .list {
+    width: 640px;
+    font-size: 28px;
+    line-height: 30px; }
+    .sub_section .list thead tr {
+      border-top: 1px solid #888;
+      border-bottom: 1px solid #888; }
+      .sub_section .list thead tr th {
+        height: 60px; }
+    .sub_section .list tbody tr {
+      border-bottom: 1px solid #ddd;
+      margin: 10px 0;
+      height: 60px; }
+      .sub_section .list tbody tr:nth-child(even) {
+        background: #f8f8f8; }
+      .sub_section .list tbody tr td:first-child {
+        width: 80px; }
+      .sub_section .list tbody tr td:nth-child(2) {
+        line-height: 60px;
+        width: 400px;
+        text-align: left;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+  .sub_section .pagination {
+    width: 640px;
+    margin-top: 60px; }
+    .sub_section .pagination thead tr {
+      border: none; }
+      .sub_section .pagination thead tr th a {
+        padding: 10px 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px; }
+      .sub_section .pagination thead tr .pagination_number a {
+        border: none; }
+  .sub_section .search {
+    margin-top: 40px; }
+    .sub_section .search input {
+      width: 500px;
+      height: 46px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 1px 1px 0 #ddd;
+      text-align: center;
+      font-size: 30px; }
+    .sub_section .search img {
+      padding-bottom: 8px; }
+  .sub_section .view {
+    margin-top: -25px;
+    width: 640px;
+    font-size: 28px;
+    line-height: 30px; }
+    .sub_section .view tr {
+      border-bottom: 1px solid #ccc; }
+      .sub_section .view tr td {
+        height: 60px; }
+        .sub_section .view tr td:first-child {
+          width: 150px;
+          background: #eee; }
+        .sub_section .view tr td:nth-child(2) {
+          text-align: left;
+          padding: 4px 4px 4px 20px;
+          font-size: 20px; }
 
 .C_totop {
   position: fixed;
@@ -313,6 +382,7 @@ footer {
   bottom: 80px;
   width: 80px;
   height: 80px;
+  opacity: 0;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 50%;
   font-size: 24px;
