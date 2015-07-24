@@ -427,7 +427,7 @@ footer {
 				height: 60px;
 				&:first-child {
 					width: 150px;
-					// text-align: center;
+					color: #333;
 					background: #eee;
 				}
 				&:nth-child(2) {
@@ -438,6 +438,26 @@ footer {
 			}
 		}
 	} //.view
+	.board_view {
+		padding: 20px;
+		text-align: left;
+		min-height: 400px;
+		line-height: 22px;
+		img {
+			max-width: 95%;
+		}
+	}
+	.list_btn {
+		width: 150px;
+		height: 60px;
+		background: #ddd;
+		border-radius: 5px;
+		color: #666;
+		font-size: 32px;
+		line-height: 60px;
+		margin: 40px 0 30px 20px;
+
+	}
 } // .sub_section
 // 서브 페이지
 // 탑 버튼

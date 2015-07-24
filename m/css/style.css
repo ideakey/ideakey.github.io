@@ -370,11 +370,28 @@ footer {
         height: 60px; }
         .sub_section .view tr td:first-child {
           width: 150px;
+          color: #333;
           background: #eee; }
         .sub_section .view tr td:nth-child(2) {
           text-align: left;
           padding: 4px 4px 4px 20px;
           font-size: 20px; }
+  .sub_section .board_view {
+    padding: 20px;
+    text-align: left;
+    min-height: 400px;
+    line-height: 22px; }
+    .sub_section .board_view img {
+      max-width: 95%; }
+  .sub_section .list_btn {
+    width: 150px;
+    height: 60px;
+    background: #ddd;
+    border-radius: 5px;
+    color: #666;
+    font-size: 32px;
+    line-height: 60px;
+    margin: 40px 0 30px 20px; }
 
 .C_totop {
   position: fixed;
