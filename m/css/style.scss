@@ -492,6 +492,7 @@ footer {
 				height: 60px;
 				font-size: 30px;
 				padding: 0 10px;
+				border: 1px solid #ccc;
 			}
 			.form_center,
 			.form_tel {
@@ -505,18 +506,36 @@ footer {
 					margin-right: 0;
 				}
 			}
-		} //.li
-		.ing {
-			// border: 1px solid #333;
-			overflow: hidden;
-			p{
-
-			}
 			input[type=checkbox] + label {
 				line-height: 60px;
 				margin-left: 10px;
 			}
-		} // .ing
+		} //.li
+		.lwidth {
+			overflow: hidden;
+			p {
+				width: 100%;
+			}
+			input[type=checkbox] + label {
+				margin-left: 10px;
+				line-height: 60px;
+				font-size: 26px;
+			}
+			textarea {
+				width: 566px;
+				height: 150px;
+				margin-left: 10px;
+				border: 1px solid #ccc;
+				font-size: 26px;
+				line-height: 28px;
+				padding: 10px;
+			}
+			.terms {
+				// margin-left: 100px;
+				float: right;
+				// overflow: hidden;
+			}
+		} // .lwidth
 	} // .request_box
 } // .sub_section
 // 서브 페이지
