@@ -404,7 +404,7 @@ footer {
       margin: 20px 0; }
       .sub_section .request_box li p {
         float: left;
-        width: 170px;
+        width: 175px;
         position: relative;
         padding-left: 20px;
         line-height: 60px; }
@@ -444,7 +444,7 @@ footer {
       .sub_section .request_box .lwidth input[type=checkbox] + label {
         margin-left: 10px;
         line-height: 60px;
-        font-size: 26px; }
+        font-size: 24px; }
       .sub_section .request_box .lwidth textarea {
         width: 566px;
         height: 150px;
