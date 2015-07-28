@@ -461,7 +461,7 @@ footer {
       overflow: hidden; }
       .sub_section div article .promotion img {
         float: left; }
-  .sub_section div p {
+  .sub_section div p.accordion {
     padding: 40px 20px;
     position: relative;
     height: 30px;
@@ -470,7 +470,7 @@ footer {
     line-height: 33px;
     font-size: 2.3em;
     border-bottom: 1px solid #ddd; }
-    .sub_section div p::before {
+    .sub_section div p.accordion::before {
       content: '';
       position: absolute;
       width: 40px;
