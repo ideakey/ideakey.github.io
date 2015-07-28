@@ -537,6 +537,50 @@ footer {
 			}
 		} // .lwidth
 	} // .request_box
+	div { // 웹서비스 용
+		article {
+			display: none;
+			.promotion {
+				overflow: hidden;
+				img {
+					float: left;
+				}
+			}
+		}
+		p {
+			padding: 40px 20px;
+			position: relative;
+			height: 30px;
+			cursor: pointer;
+			color: #777;
+			line-height: 33px;
+			font-size: 2.3em;
+			border-bottom: 1px solid #ddd;
+			&::before {
+				content: '';
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				right: 13px;
+				top: 32px;
+				background: transparent url(../images/arrow_down.png) no-repeat center center;
+			}
+		}
+		.on {
+		 &::before {
+			content: '';
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			right: 13px;
+			top: 32px;
+			background: transparent url(../images/arrow_up.png) no-repeat center center;
+			}
+			+ article {
+				display: block;
+			}
+		}
+	} // div
 } // .sub_section
 // 서브 페이지
 

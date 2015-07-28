@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>lightSlider Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+    <meta name="description" content="">
+    <link rel="stylesheet"  href="lightslider.css"/>
+               <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="jquery-1.7.1.min.js"></script>
+    <script src="lightslider.js"></script>
+         <script>
+
+        $(function(){//제이쿼리시작
+
+
+     $('.C_totop').click(function(){
+    $('body,html').animate({
+     'scrollTop':0
+    },2000)
+   })
+   var spotarr = [];
+
+   $('body section').each(function(i,e){
+
+    spotarr.push($(e).offset().top)
+
+   })
+
+
+   $(window).scroll(function(){
+
+    var sct= $(window).scrollTop()
+
+    $('body section').each(function(i,e){
+
+     bg(sct)
+
+    })
+
+
+
+   })
+
+
+   $(window).trigger('scroll')
+
+   function bg(x){
+
+    if(x >= 200){
+
+     $('.C_totop').css({
+
+      'opacity':'1'
+
+     })
+
+
+    }else if(x<200){
+
+     $('.C_totop').css({
+
+      'opacity':'0'
+
+
+     })
+
+
+
+    }
+
+   }
+
+
+            //모달팝업
+            var pfnum=0;
+            $(".prpf").click(function(){
+                var a = screen.height;
+                $(".modal").css("visibility","visible");
+                $(".demo").css("visibility","visible");
+                $(".ac-container").css("display","none");
+
+
+            });
+
+                        $(".prpf2").click(function(){
+                var a = screen.height;
+                $(".modal2").css("visibility","visible");
+                $(".demo2").css("visibility","visible");
+                $(".ac-container").css("display","none");
+
+
+            });
+
+                $(".modal_title").click(function(){
+                var a = screen.height;
+                    $(".demo").css("visibility","hidden");
+            $(".modal").css("visibility","hidden");
+
+                    $(".demo2").css("visibility","hidden");
+            $(".modal2").css("visibility","hidden");
+
+                $(".ac-container").css("display","block");
+
+
+            });
+
+             $(".modalwrap").on("swipe",function(){
+                 $(".modal img").attr("src","images/3.jpg");
+  });
+
+           var snspromotion = $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:6,
+                slideMargin: 0,
+                speed:500,
+                auto:false,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }
+            });
+
+                var snspromotion2 = $('#image-gallery2').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:6,
+                slideMargin: 0,
+                speed:500,
+                auto:false,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery2').removeClass('cS-hidden');
+                }
+            });
+
+              $('.prpf:nth-of-type(1)').click(function(){
+        snspromotion.goToSlide(1);
+    });
+                      $('.prpf:nth-of-type(2)').click(function(){
+        snspromotion.goToSlide(2);
+    });
+                      $('.prpf:nth-of-type(3)').click(function(){
+        snspromotion.goToSlide(3);
+    });
+
+                          $('.prpf:nth-of-type(4)').click(function(){
+        snspromotion.goToSlide(4);
+    });
+                      $('.prpf:nth-of-type(5)').click(function(){
+        snspromotion.goToSlide(5);
+    });
+                      $('.prpf:nth-of-type(6)').click(function(){
+        snspromotion.goToSlide(6);
+    });
+
+                          $('.prpf:nth-of-type(7)').click(function(){
+        snspromotion.goToSlide(7);
+    });
+                      $('.prpf:nth-of-type(8)').click(function(){
+        snspromotion.goToSlide(8);
+    });
+
+
+             $('.prpf2:nth-of-type(1)').click(function(){
+        snspromotion2.goToSlide(1);
+    });
+                      $('.prpf2:nth-of-type(2)').click(function(){
+        snspromotion2.goToSlide(2);
+    });
+                      $('.prpf2:nth-of-type(3)').click(function(){
+        snspromotion2.goToSlide(3);
+    });
+
+                          $('.prpf2:nth-of-type(4)').click(function(){
+        snspromotion2.goToSlide(4);
+    });
+                      $('.prpf2:nth-of-type(5)').click(function(){
+        snspromotion2.goToSlide(5);
+    });
+                      $('.prpf2:nth-of-type(6)').click(function(){
+        snspromotion2.goToSlide(6);
+    });
+
+
+    });//제이쿼리끝
+
+
+
+    </script>
+
+</head>
+<body>
+
+
+     <div id="wrap">
+    <div id="header">
+    <?include "./menubar.html"; ?>
+
+        <div class="container">
+<div class="top_image">
+<img src="images/3main.png" width="640" height="307"></div></div>
+    <section class="ac-container">
+                <div class="1">
+                    <input id="ac-1" name="accordion-1" type="checkbox" />
+                  <label for="ac-1">웹&모바일 웹</label>
+                    <article class="ac-small">
+                     <img src="images/3web_02.png" width="640" height="611">
+                     <img src="images/3web_03.png">
+                     <img src="images/3web_04.png">
+          <br><br><br>
+                    </article>
+                </div>
+                <div>
+                    <input id="ac-2" name="accordion-1" type="checkbox" />
+                    <label for="ac-2">DA배너 포트폴리오</label>
+                    <article class="ac-medium">
+                     <br><br>
+                     <img src="images/3web_06.png">
+                     <img src="images/3web_07.png">
+                     <img src="images/3web_08.png">
+                     <img src="images/3web_09.png">
+                    </article>
+                </div>
+                <div>
+                    <input id="ac-3" name="accordion-1" type="checkbox" />
+                    <label for="ac-3">프로모션 페이지</label>
+                    <article class="ac-large">
+                        <img src="images/3_01.png">
+                        <div class="promotion">
+
+                            <div class="prpf"><img src="images/PROMOTION_03.jpg"></div>
+                            <div class="prpf"><img src="images/PROMOTION_04.jpg"></div>
+
+                            <div class="prpf"><img src="images/PROMOTION_05.jpg"></div>
+                            <div class="prpf"><img src="images/PROMOTION_06.jpg"></div>
+                            <div class="prpf"><img src="images/PROMOTION_07.jpg"></div>
+                            <div class="prpf"><img src="images/PROMOTION_08.jpg"></div>
+                            <div class="prpf"><img src="images/PROMOTION_09.jpg"></div>
+                            <div class="prpf"><img src="images/PROMOTION_10.jpg"></div>
+                            <div class=""><img src="images/PROMOTION_11.png"></div>
+
+                        </div>
+
+                    </article>
+                </div>
+                <div>
+                    <input id="ac-4" name="accordion-1" type="checkbox" />
+                    <label for="ac-4">SNS형 프로모션</label>
+                    <article class="ac-large">
+                     <img src="images/3SNS_01.png">
+                        <div class="promotion">
+                        <div class="prpf2"><img src="images/SNSPROMOTIONO_04.jpg"></div>
+                        <div class="prpf2"><img src="images/SNSPROMOTIONO_03.jpg"></div>
+                        <div class="prpf2"><img src="images/SNSPROMOTIONO_05.jpg"></div>
+                        <div class="prpf2"><img src="images/SNSPROMOTIONO_06.jpg"></div>
+                        <div class="prpf2"><img src="images/SNSPROMOTIONO_07.jpg"></div>
+                        <div class="prpf2"><img src="images/SNSPROMOTIONO_08.jpg"></div>
+                        </div>
+
+                    </article>
+                </div>
+                    </section>
+
+        </div>
+                   <div class="modal2 top">
+                          <div class="demo2">
+        <div class="item">
+            <div class="clearfix" style="max-width:640px;">
+                <ul id="image-gallery2" class="gallery list-unstyled cS-hidden">
+                    <li>
+                        <div class="kxxx">가루다인도네시아항공<br>페이스북 이벤트 페이지(1/6)</div><div><img src="images/1.jpg" /></div>
+                         </li>
+                    <li data-thumb="images/2.jpg">
+                                                <div class="kxxx">가루다인도네시아항공<br>페이스북 이벤트 페이지(2/6)</div><div><img src="images/2.jpg" /></div>
+                         </li>
+                    <li data-thumb="images/3.jpg">
+                        <div class="kxxx">가루다인도네시아항공<br>페이스북 이벤트 페이지(3/6)</div><div><img src="images/3.jpg" /></div>
+                         </li>
+                    <li data-thumb="images/3.jpg">
+                        <div class="kxxx">가루다인도네시아항공<br>페이스북 이벤트 페이지(4/6)</div><div><img src="images/4.jpg" /></div>
+                         </li>
+                    <li data-thumb="img/thumb/cS-5.jpg">
+                        <div class="kxxx">가루다인도네시아항공<br>페이스북 이벤트 페이지(5/6)</div><div><img src="images/5.jpg" /></div>
+                         </li>
+                    <li data-thumb="img/thumb/cS-6.jpg">
+                        <div class="kxxx">한진관광<br>페이스북 이벤트 페이지(6/6)</div><div><img src="images/6.jpg" /></div>
+                         </li>
+
+                </ul>
+
+
+            </div>
+        </div>
+
+
+    </div>
+                            <div class="modalwrap">
+
+                                <div class="modal_title">asdfasdf</div>
+                                <div class="mm"><img src="images/2.jpg"></div>
+                                </div>
+
+
+                        </div>
+
+                    <div class="modal top">
+                          <div class="demo">
+        <div class="item">
+            <div class="clearfix" style="max-width:640px;">
+                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                    <li>
+                        <div class="kxxx">한진관광<br>프로모션 이벤트(1of8)</div><div><img src="images/1-1.jpg" /></div>
+                         </li>
+                    <li>
+                        <div class="kxxx">콩스타일<br>웹 이벤트(2of8)</div><div><img src="images/2-2.jpg" /></div>
+                         </li>
+                    <li>
+                        <div class="kxxx">칠성사이다<br>모바일웹이벤트(3of8)</div><div><img src="images/3-3.jpg" /></div>
+                         </li>
+                    <li>
+                        <div class="kxxx">효원가족공원<br>프로모션이벤트(4of8)</div><div><img src="images/4-4.jpg" /></div>
+                         </li>
+                    <li>
+                        <div class="kxxx">라이브치과<br>모바일웹이벤트(5of8)</div><div><img src="images/5-5.jpg" /></div>
+                         </li>
+                    <li>
+                        <div class="kxxx">딜라이트<br>이벤트팝업(6of8)</div><div><img src="images/6-6.jpg" /></div>
+                         </li>
+                    <li>
+                        <div class="kxxx">스타성형외과·치과<br>모바일웹 이벤트(7of8)</div><div><img src="images/7-7.jpg" /></div>
+                         </li>
+                    <li>
+                        <div class="kxxx">예리나 성형외과<br>프로모셔이벤트(8of8)</div><div><img src="images/8-8.jpg" /></div>
+                         </li>
+
+                </ul>
+
+
+
+        </div>
+
+
+    </div>
+                            <div class="modalwrap">
+
+                                <div class="modal_title">asdfasdf</div>
+                                </div>
+
+
+                        </div>
+         </div>
+        <!--top버튼-->
+        <div class="C_totop">
+
+   <span>TOP</span>
+        </div>
+
+         <!--하단정보-->
+            <?include "./footer.html"; ?>
+        </div>
+</body>

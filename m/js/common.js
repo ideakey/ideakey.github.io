@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   //<!-- 제이쿼리 레이어 스라이딩 오픈 클로즈 -->
   $(".toggle").click(function() {
     var id = $(this).attr("id");
@@ -23,6 +24,16 @@ $(document).ready(function() {
     }
   });
 
+  // 아코디언 제어
+  $(".accordion").click(function() {
+    if( $(this).hasClass("on")) {
+      $(this).removeClass("on");
+
+    } else {
+      $(this).addClass("on");
+    };
+
+  });
 
 
 });

@@ -455,6 +455,39 @@ footer {
         padding: 10px; }
       .sub_section .request_box .lwidth .terms {
         float: right; }
+  .sub_section div article {
+    display: none; }
+    .sub_section div article .promotion {
+      overflow: hidden; }
+      .sub_section div article .promotion img {
+        float: left; }
+  .sub_section div p {
+    padding: 40px 20px;
+    position: relative;
+    height: 30px;
+    cursor: pointer;
+    color: #777;
+    line-height: 33px;
+    font-size: 2.3em;
+    border-bottom: 1px solid #ddd; }
+    .sub_section div p::before {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      right: 13px;
+      top: 32px;
+      background: transparent url(../images/arrow_down.png) no-repeat center center; }
+  .sub_section div .on::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 13px;
+    top: 32px;
+    background: transparent url(../images/arrow_up.png) no-repeat center center; }
+  .sub_section div .on + article {
+    display: block; }
 
 /* 커스텀 체크박스 */
 input[type=checkbox] {
