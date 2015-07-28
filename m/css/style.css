@@ -48,7 +48,8 @@ table {
 body {
   font-family: 'Noto Sans', 'Nanum Gothic', sans-serif;
   font-size: 100%;
-  word-break: break-all; }
+  word-break: break-all;
+  height: 100%; }
 
 .box {
   border: 1px solid #333;
@@ -488,6 +489,32 @@ footer {
     background: transparent url(../images/arrow_up.png) no-repeat center center; }
   .sub_section div .on + article {
     display: block; }
+
+div.modal {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 10;
+  background: #333; }
+  div.modal ul {
+    overflow-x: hidden; }
+  div.modal li {
+    display: block;
+    float: left;
+    margin: 0;
+    cursor: pointer; }
+    div.modal li p {
+      width: 640px;
+      margin: 0 auto;
+      color: #777;
+      line-height: 33px;
+      font-size: 30px;
+      padding: 20px 0;
+      background: #fff; }
 
 /* 커스텀 체크박스 */
 input[type=checkbox] {

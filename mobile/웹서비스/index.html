@@ -24,53 +24,29 @@
       var spotarr = [];
 
       $('body section').each(function(i, e) {
-
         spotarr.push($(e).offset().top)
-
       })
 
 
       $(window).scroll(function() {
-
         var sct = $(window).scrollTop()
-
         $('body section').each(function(i, e) {
-
           bg(sct)
-
         })
-
-
-
       })
 
 
       $(window).trigger('scroll')
-
       function bg(x) {
-
         if (x >= 200) {
-
           $('.C_totop').css({
-
             'opacity': '1'
-
           })
-
-
         } else if (x < 200) {
-
           $('.C_totop').css({
-
             'opacity': '0'
-
-
           })
-
-
-
         }
-
       }
 
 
@@ -371,62 +347,7 @@
         <div class="item">
           <div class="clearfix" style="max-width:640px;">
             <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-              <li>
-                <div class="kxxx">한진관광
-                  <br>프로모션 이벤트(1of8)</div>
-                <div>
-                  <img src="images/1-1.jpg" />
-                </div>
-              </li>
-              <li>
-                <div class="kxxx">콩스타일
-                  <br>웹 이벤트(2of8)</div>
-                <div>
-                  <img src="images/2-2.jpg" />
-                </div>
-              </li>
-              <li>
-                <div class="kxxx">칠성사이다
-                  <br>모바일웹이벤트(3of8)</div>
-                <div>
-                  <img src="images/3-3.jpg" />
-                </div>
-              </li>
-              <li>
-                <div class="kxxx">효원가족공원
-                  <br>프로모션이벤트(4of8)</div>
-                <div>
-                  <img src="images/4-4.jpg" />
-                </div>
-              </li>
-              <li>
-                <div class="kxxx">라이브치과
-                  <br>모바일웹이벤트(5of8)</div>
-                <div>
-                  <img src="images/5-5.jpg" />
-                </div>
-              </li>
-              <li>
-                <div class="kxxx">딜라이트
-                  <br>이벤트팝업(6of8)</div>
-                <div>
-                  <img src="images/6-6.jpg" />
-                </div>
-              </li>
-              <li>
-                <div class="kxxx">스타성형외과·치과
-                  <br>모바일웹 이벤트(7of8)</div>
-                <div>
-                  <img src="images/7-7.jpg" />
-                </div>
-              </li>
-              <li>
-                <div class="kxxx">예리나 성형외과
-                  <br>프로모셔이벤트(8of8)</div>
-                <div>
-                  <img src="images/8-8.jpg" />
-                </div>
-              </li>
+
 
             </ul>
 

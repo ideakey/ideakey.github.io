@@ -86,29 +86,49 @@
 
   </section>
 
-<ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-  <li>
-    <div class="kxxx">한진관광
-      <br>프로모션 이벤트(1of8)</div>
-    <div>
-      <img src="images/1-1.jpg" />
-    </div>
-  </li>
-  <li>
-    <div class="kxxx">콩스타일
-      <br>웹 이벤트(2of8)</div>
-    <div>
-      <img src="images/2-2.jpg" />
-    </div>
-  </li>
-  <li>
-    <div class="kxxx">칠성사이다
-      <br>모바일웹이벤트(3of8)</div>
-    <div>
-      <img src="images/3-3.jpg" />
-    </div>
-  </li>
-</ul>
+<div class="modal">
+  <ul id="image-gallery" class="">
+    <li>
+      <p>한진관광<br>프로모션 이벤트(1of8)</p>
+        <img src="images/promotion_slide_01.jpg" />
+    </li>
+    <li>
+      <p>콩스타일
+        <br>웹 이벤트(2of8)</p>
+        <img src="images/promotion_slide_02.jpg" />
+    </li>
+    <li>
+      <p>칠성사이다
+        <br>모바일웹이벤트(3of8)</p>
+        <img src="images/promotion_slide_03.jpg" />
+    </li>
+    <li>
+      <p>효원가족공원
+        <br>프로모션이벤트(4of8)</p>
+        <img src="images/promotion_slide_04.jpg" />
+    </li>
+    <li>
+      <p>라이브치과
+        <br>모바일웹이벤트(5of8)</p>
+        <img src="images/promotion_slide_05.jpg" />
+    </li>
+    <li>
+      <p>딜라이트
+        <br>이벤트팝업(6of8)</p>
+        <img src="images/promotion_slide_06.jpg" />
+    </li>
+    <li>
+      <p>스타성형외과·치과
+        <br>모바일웹 이벤트(7of8)</p>
+        <img src="images/promotion_slide_07.jpg" />
+    </li>
+    <li>
+      <p>예리나 성형외과
+        <br>프로모셔이벤트(8of8)</p>
+        <img src="images/promotion_slide_08.jpg" />
+    </li>
+  </ul>
+</div>
 
 
   <!-- // 메인 컨텐츠 -->
@@ -159,6 +179,26 @@
 <!-- lightslider -->
 <script src="js/lightslider.js"></script>
 <script src="js/common.js"></script>
+
+<!-- lightslider용 -->
+<script>
+$(document).ready(function() {
+
+  var snspromotion = $('#image-gallery').lightSlider({
+    // gallery: true,
+    item: 1,
+    // thumbItem: 6,
+    slideMargin: 0,
+    // speed: 500,
+    // auto: false,
+    loop: true,
+  });
+
+
+  });
+
+
+</script>
 <!-- //자바스크립트 -->
 </body>
 </html>
