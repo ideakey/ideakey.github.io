@@ -541,10 +541,12 @@ footer {
 	div { // 웹서비스 용
 		article {
 			display: none;
-			.promotion {
+			.promotion1,
+			.promotion2 {
 				overflow: hidden;
 				img {
 					float: left;
+					cursor: pointer;
 				}
 			}
 		}
@@ -584,10 +586,12 @@ footer {
 		}
 	} // div
 } // .sub_section
-section {
-	// display: none;
+section.off {
+	display: none;
 }
-div.modal {
+
+div.promotion_slide,
+div.snspromotion_slide {
 	visibility: hidden;
 	position: fixed;
 	top: 0;
@@ -617,6 +621,9 @@ div.modal {
 			background: #fff;
 		}
 	}
+}
+div.snspromotion_slide {
+ // visibility: visible;
 }
 // 서브 페이지
 
@@ -673,8 +680,26 @@ input[type=checkbox]:checked + label:before {
 	transition: 0.5s all ease ;
 }
 // 탑 버튼
-
-
+// 닫기 버튼
+.C_close {
+	position: fixed;
+	top: 10px;
+	left: 20px;
+	width: 80px;
+	height: 80px;
+	opacity: 1;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 50%;
+	font-size: 24px;
+	color: #fff;
+	line-height: 70px;
+	font-weight: 100;
+	z-index: 11;
+	cursor: pointer;
+	-webkit-transition: 0.5s all ease ;
+	-o-transition: 0.5s all ease ;
+	transition: 0.5s all ease ;
+}
 
 
 
