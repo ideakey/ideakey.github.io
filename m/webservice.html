@@ -91,35 +91,35 @@
   <ul id="image-gallery1">
     <li>
       <p>한진관광<br>프로모션 이벤트(1of8)</p>
-        <img src="images/promotion_slide_01.jpg" />
+        <img src="images/promotion_slide_01.jpg" height="1695" />
     </li>
     <li>
       <p>콩스타일<br>웹 이벤트(2of8)</p>
-        <img src="images/promotion_slide_02.jpg" />
+        <img src="images/promotion_slide_02.jpg" height="1438" />
     </li>
     <li>
       <p>칠성사이다<br>모바일웹이벤트(3of8)</p>
-        <img src="images/promotion_slide_03.jpg" />
+        <img src="images/promotion_slide_03.jpg" height="1600" />
     </li>
     <li>
       <p>효원가족공원<br>프로모션이벤트(4of8)</p>
-        <img src="images/promotion_slide_04.jpg" />
+        <img src="images/promotion_slide_04.jpg" height="1289" />
     </li>
     <li>
       <p>라이브치과<br>모바일웹이벤트(5of8)</p>
-        <img src="images/promotion_slide_05.jpg" />
+        <img src="images/promotion_slide_05.jpg" height="1273" />
     </li>
     <li>
       <p>딜라이트<br>이벤트팝업(6of8)</p>
-        <img src="images/promotion_slide_06.jpg" />
+        <img src="images/promotion_slide_06.jpg" height="328" />
     </li>
     <li>
       <p>스타성형외과·치과<br>모바일웹 이벤트(7of8)</p>
-        <img src="images/promotion_slide_07.jpg" />
+        <img src="images/promotion_slide_07.jpg" height="2656" />
     </li>
     <li>
       <p>예리나 성형외과<br>프로모셔이벤트(8of8)</p>
-        <img src="images/promotion_slide_08.jpg" />
+        <img src="images/promotion_slide_08.jpg" height="1758" />
     </li>
   </ul>
   <!-- 닫기 버튼 -->
@@ -220,6 +220,7 @@ $(document).ready(function() {
 
   var promotion = $('#image-gallery1').lightSlider({
     // gallery: true,
+    adaptiveHeight:true,
     item: 1,
     // thumbItem: 6,
     slideMargin: 0,
@@ -230,6 +231,7 @@ $(document).ready(function() {
 
   var snspromotion = $('#image-gallery2').lightSlider({
     // gallery: true,
+    adaptiveHeight:true,
     item: 1,
     // thumbItem: 6,
     slideMargin: 0,
@@ -240,7 +242,7 @@ $(document).ready(function() {
 
   // 포트폴리오 클릭 스크립트
 
-  // 섬네일 클릭시 동작 
+  // 섬네일 클릭시 동작
   $(".promotion1").click(function() {
     $(".promotion_slide").css("visibility","visible");
     $("section").addClass ("off");
