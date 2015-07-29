@@ -479,15 +479,16 @@ footer {
       right: 13px;
       top: 32px;
       background: transparent url(../images/arrow_down.png) no-repeat center center; }
-  .sub_section div .on::before {
+  .sub_section div .accordion.on::before {
     content: '';
     position: absolute;
     width: 40px;
     height: 40px;
     right: 13px;
     top: 32px;
-    background: transparent url(../images/arrow_up.png) no-repeat center center; }
-  .sub_section div .on + article {
+    background: transparent url(../images/arrow_up.png) no-repeat center center;
+    z-index: 3; }
+  .sub_section div .accordion.on + article {
     display: block; }
 
 div.modal {

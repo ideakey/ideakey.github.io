@@ -567,7 +567,7 @@ footer {
 				background: transparent url(../images/arrow_down.png) no-repeat center center;
 			}
 		}
-		.on {
+		.accordion.on {
 		 &::before {
 			content: '';
 			position: absolute;
@@ -576,6 +576,7 @@ footer {
 			right: 13px;
 			top: 32px;
 			background: transparent url(../images/arrow_up.png) no-repeat center center;
+			z-index: 3;
 			}
 			+ article {
 				display: block;
