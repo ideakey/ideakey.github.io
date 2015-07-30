@@ -632,10 +632,20 @@ div.snspromotion_slide {
 .adservice {
 	div {
 		article {
-			display: block;
+
+			display: block; //테스트 영역 필 체크
+
 			ul {
 
 				li {
+					// &:nth-child(1),
+					// &:nth-child(2),
+					// &:nth-child(3),
+					// &:nth-child(4)
+					//  {
+					// 	display: none;
+					// }
+
 					p.text2 {
 						font-family: 'Arial Narrow', Arial, sans-serif;
 						font-size: 1.563em;
@@ -665,6 +675,25 @@ div.snspromotion_slide {
 						color: #666766;
 						font-weight: bold;
 					}
+					p.text4 {
+						font-family: 'Arial Narrow', Arial, sans-serif;
+						font-size: 1.563em;
+						line-height: 33px;
+						text-align: left;
+						letter-spacing : -0.05em;
+						padding: 0px 20px 0px 20px;
+						color: #3a3e3d;
+						font-weight: bold;
+					}
+					p.text6 {
+						font-family: 'Arial Narrow', Arial, sans-serif;
+						font-size: 1.438em;
+						line-height: 33px;
+						text-align: left;
+						letter-spacing : -0.05em;
+						padding: 0px 20px 0px 20px;
+						color: #3a3e3d;
+					}
 					margin: 0;
 					width: 640px;
 					cursor: pointer;
@@ -673,9 +702,7 @@ div.snspromotion_slide {
 							margin-bottom: 30px;
 						}
 					}
-
 					.sa_menu {
-						// overflow: hidden;
 						width: 640px;
 						margin: 0 auto;
 						img {
@@ -683,9 +710,8 @@ div.snspromotion_slide {
 								margin: 0;
 							}
 							display: inline;
-							padding: 20px 10px 0 10px;
+							padding: 20px 12px 0 12px;
 							cursor: pointer;
-							// float: left;
 						}
 					}
 				}
