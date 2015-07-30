@@ -532,9 +532,7 @@ footer {
 				padding: 10px;
 			}
 			.terms {
-				// margin-left: 100px;
 				float: right;
-				// overflow: hidden;
 			}
 		} // .lwidth
 	} // .request_box
@@ -570,6 +568,7 @@ footer {
 			}
 		}
 		.accordion.on {
+			background: #F8F8F8;
 		 &::before {
 			content: '';
 			position: absolute;
@@ -582,6 +581,8 @@ footer {
 			}
 			+ article {
 				display: block;
+				// visibility: visible;
+				// height: auto;
 			}
 		}
 	} // div
@@ -606,7 +607,6 @@ div.snspromotion_slide {
 
 	}
 	li {
-
 		display: block;
 		float: left;
 		margin: 0;
@@ -628,9 +628,79 @@ div.snspromotion_slide {
 		}
 	}
 }
+
+.adservice {
+	div {
+		article {
+			display: block;
+			ul {
+
+				li {
+					p.text2 {
+						font-family: 'Arial Narrow', Arial, sans-serif;
+						font-size: 1.563em;
+						line-height: 33px;
+						text-align: left;
+						letter-spacing : -0.05em;
+						padding: 0px 20px 0px 20px;
+						color: #6a7af5;
+						font-weight: bold;
+					}
+					p.text1 {
+						font-family:'Arial Narrow', Arial, sans-serif;
+						font-size:1.438em;
+						line-height: 33px;
+						text-align: left;
+						letter-spacing : -0.05em;
+						padding:0px 20px 0px 20px;
+						color:#5d5d5d;
+					}
+					p.text3 {
+						font-family: 'Arial Narrow', Arial, sans-serif;
+						font-size: 1.500em;
+						line-height: 33px;
+						text-align: left;
+						letter-spacing : -0.05em;
+						padding: 0px 20px 0px 20px;
+						color: #666766;
+						font-weight: bold;
+					}
+					margin: 0;
+					width: 640px;
+					cursor: pointer;
+					img {
+						&:last-child {
+							margin-bottom: 30px;
+						}
+					}
+
+					.sa_menu {
+						// overflow: hidden;
+						width: 640px;
+						margin: 0 auto;
+						img {
+							&:last-child {
+								margin: 0;
+							}
+							display: inline;
+							padding: 20px 10px 0 10px;
+							cursor: pointer;
+							// float: left;
+						}
+					}
+				}
+			}
+		}
+	}
+} // .adservice
+
+
+//테스트용
 div.snspromotion_slide {
  // visibility: visible;
 }
+
+
 // 서브 페이지
 
 

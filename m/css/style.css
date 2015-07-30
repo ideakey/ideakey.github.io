@@ -482,17 +482,19 @@ footer {
       right: 13px;
       top: 32px;
       background: transparent url(../images/arrow_down.png) no-repeat center center; }
-  .sub_section div .accordion.on::before {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    right: 13px;
-    top: 32px;
-    background: transparent url(../images/arrow_up.png) no-repeat center center;
-    z-index: 3; }
-  .sub_section div .accordion.on + article {
-    display: block; }
+  .sub_section div .accordion.on {
+    background: #F8F8F8; }
+    .sub_section div .accordion.on::before {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      right: 13px;
+      top: 32px;
+      background: transparent url(../images/arrow_up.png) no-repeat center center;
+      z-index: 3; }
+    .sub_section div .accordion.on + article {
+      display: block; }
 
 section.off {
   display: none; }
@@ -530,6 +532,50 @@ div.snspromotion_slide {
       display: block;
       margin: 0 auto;
       width: 640px; }
+
+.adservice div article {
+  display: block; }
+  .adservice div article ul li {
+    margin: 0;
+    width: 640px;
+    cursor: pointer; }
+    .adservice div article ul li p.text2 {
+      font-family: 'Arial Narrow', Arial, sans-serif;
+      font-size: 1.563em;
+      line-height: 33px;
+      text-align: left;
+      letter-spacing: -0.05em;
+      padding: 0px 20px 0px 20px;
+      color: #6a7af5;
+      font-weight: bold; }
+    .adservice div article ul li p.text1 {
+      font-family: 'Arial Narrow', Arial, sans-serif;
+      font-size: 1.438em;
+      line-height: 33px;
+      text-align: left;
+      letter-spacing: -0.05em;
+      padding: 0px 20px 0px 20px;
+      color: #5d5d5d; }
+    .adservice div article ul li p.text3 {
+      font-family: 'Arial Narrow', Arial, sans-serif;
+      font-size: 1.500em;
+      line-height: 33px;
+      text-align: left;
+      letter-spacing: -0.05em;
+      padding: 0px 20px 0px 20px;
+      color: #666766;
+      font-weight: bold; }
+    .adservice div article ul li img:last-child {
+      margin-bottom: 30px; }
+    .adservice div article ul li .sa_menu {
+      width: 640px;
+      margin: 0 auto; }
+      .adservice div article ul li .sa_menu img {
+        display: inline;
+        padding: 20px 10px 0 10px;
+        cursor: pointer; }
+        .adservice div article ul li .sa_menu img:last-child {
+          margin: 0; }
 
 /* 커스텀 체크박스 */
 input[type=checkbox] {
