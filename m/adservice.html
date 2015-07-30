@@ -513,27 +513,7 @@
         <img src="images/2_7press_04.png">
       </article>
     </div>
-
   </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!-- // 메인 컨텐츠 -->
   <!--top버튼-->​
   <div class="C_totop">
@@ -564,18 +544,8 @@
     </div>
   </footer>
   <!-- // 푸터 영역 -->
+  <!-- //페이지 끝 -->
 
-
-
-
-
-
-
-
-
-
-
-    <!-- //페이지 끝 -->
 <!-- 자바스크립트 -->
 <script src="http://code.jquery.com/jquery.js"></script>
 
@@ -587,7 +557,56 @@
 <script>
 
 
-$(".sa").click(function() {
+// 파라미터 관련 작업
+var str = $(location).attr('search');
+
+	if(str != ''){
+		var strArr = [];
+		strArr = str.split('?');
+		strArr = strArr[1].split('&');
+
+		var result;
+		for(i=0, j=strArr.length; i < j; i++){
+			result = strArr[i].split('=');
+			if(result[1] == 'sa'){ // 파라미터 값이 sa일때
+
+        $(".sa + article").toggle();
+        $(".sa").addClass("on");
+        $('body,html').animate({'scrollTop': 180}, 1000);
+        var sa = $('#sa').lightSlider({
+          adaptiveHeight:true,
+          item: 1,
+          slideMargin: 0,
+          loop: false,
+        });
+
+			} else if(result[1] == 'na'){ // 파라미터 값이 na일때
+          $(".na + article").toggle();
+          $(".na").addClass("on");
+          $('body,html').animate({'scrollTop': 250}, 1000);
+          var na = $('#na').lightSlider({
+            adaptiveHeight:true,
+            item: 1,
+            slideMargin: 0,
+            loop: false,
+          });
+      } else if(result[1] == 'sns'){ // 파라미터 값이 na일때
+          $(".sns + article").toggle();
+          $(".sns").addClass("on");
+          $('body,html').animate({'scrollTop': 360}, 1000);
+          var na = $('#sns').lightSlider({
+            adaptiveHeight:true,
+            item: 1,
+            slideMargin: 0,
+            loop: false,
+          });
+      };
+		}
+  }
+
+
+
+$(".sa").click(function() { // 검색광고 클릭시 동작
   $(".sa + article").toggle();
   var sa = $('#sa').lightSlider({
     adaptiveHeight:true,
@@ -597,7 +616,7 @@ $(".sa").click(function() {
   });
 })
 
-$(".na").click(function() {
+$(".na").click(function() { // 네트워크광고 클릭시
   $(".na + article").toggle();
   var na = $('#na').lightSlider({
     adaptiveHeight:true,
@@ -607,7 +626,7 @@ $(".na").click(function() {
   });
 })
 
-$(".sns").click(function() {
+$(".sns").click(function() { // SNS 광고 클릭시
   $(".sns + article").toggle();
   var na = $('#sns').lightSlider({
     adaptiveHeight:true,
@@ -617,7 +636,7 @@ $(".sns").click(function() {
   });
 })
 
-$(".ma").click(function() {
+$(".ma").click(function() { // 모바일 광고 클릭시
   $(".ma + article").toggle();
   var na = $('#ma').lightSlider({
     adaptiveHeight:true,
