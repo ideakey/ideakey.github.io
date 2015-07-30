@@ -631,9 +631,18 @@ div.snspromotion_slide {
 
 .adservice {
 	div {
+		// .sa + article,
+		// .na + article,
+		// .ec + article,
+		// .sns + article,
+		// .ma + article,
+		// .da + article
+		//  {
+		// 	display: none; //테스트 영역 필 체크
+		// }
 		article {
 
-			display: block; //테스트 영역 필 체크
+			// display: block; //테스트 영역 필 체크
 
 			ul {
 
@@ -702,7 +711,7 @@ div.snspromotion_slide {
 							margin-bottom: 30px;
 						}
 					}
-					.sa_menu {
+					.se_menu {
 						width: 640px;
 						margin: 0 auto;
 						img {
