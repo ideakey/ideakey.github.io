@@ -601,8 +601,8 @@ div.snspromotion_slide {
 	margin: 0 auto;
 	z-index: 10;
 	background: #333;
+	overflow-y: scroll;
 	ul {
-		overflow-x: hidden;
 
 	}
 	li {
@@ -610,6 +610,7 @@ div.snspromotion_slide {
 		display: block;
 		float: left;
 		margin: 0;
+		width: 640px;
 		cursor: pointer;
 		p {
 			width: 640px;
@@ -619,6 +620,11 @@ div.snspromotion_slide {
 			font-size: 30px;
 			padding: 20px 0;
 			background: #fff;
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 640px;
 		}
 	}
 }

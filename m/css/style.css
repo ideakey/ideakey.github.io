@@ -507,15 +507,14 @@ div.snspromotion_slide {
   bottom: 0;
   margin: 0 auto;
   z-index: 10;
-  background: #333; }
-  div.promotion_slide ul,
-  div.snspromotion_slide ul {
-    overflow-x: hidden; }
+  background: #333;
+  overflow-y: scroll; }
   div.promotion_slide li,
   div.snspromotion_slide li {
     display: block;
     float: left;
     margin: 0;
+    width: 640px;
     cursor: pointer; }
     div.promotion_slide li p,
     div.snspromotion_slide li p {
@@ -526,6 +525,11 @@ div.snspromotion_slide {
       font-size: 30px;
       padding: 20px 0;
       background: #fff; }
+    div.promotion_slide li img,
+    div.snspromotion_slide li img {
+      display: block;
+      margin: 0 auto;
+      width: 640px; }
 
 /* 커스텀 체크박스 */
 input[type=checkbox] {
