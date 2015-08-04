@@ -33,6 +33,19 @@ $(document).ready(function() {
     };
   });
 
+  // 리쿠르트 페이지 전용
+  $(".go_saramin, .go_jobkorea").click(function() {
+    var target = $(this).attr("class");
+    $("."+ target + "_box").slideDown();
+    $(".sub_section").addClass("off");
+  })
+
+  $(".go_recruit").click(function() {
+    $(".sub_section").removeClass("off");
+    $(".iframe_box").slideUp();
+  })
+
+
 
 
 });

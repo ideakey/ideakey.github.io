@@ -730,11 +730,34 @@ div.snspromotion_slide {
 } // .adservice
 
 
-//테스트용
-div.snspromotion_slide {
- // visibility: visible;
+.go_saramin, go_jobkorea {
+	cursor: pointer;
 }
+.go_saramin_box, .go_jobkorea_box {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: #fff;
+	display: none;
+	z-index: 20;
+	p {
+		height: 70px;
+		border: 1px solid #333;
+		font-size: 30px;
+		line-height: 70px;
+		cursor: pointer;
+		&::before {
+			content: '\25BC';
+		}
+		&:hover {
+			background: #ccc;
+		}
+	}
 
+
+}
 
 // 서브 페이지
 

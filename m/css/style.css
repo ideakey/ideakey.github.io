@@ -592,6 +592,29 @@ div.snspromotion_slide {
       .adservice div article ul li .se_menu img:last-child {
         margin: 0; }
 
+.go_saramin, go_jobkorea {
+  cursor: pointer; }
+
+.go_saramin_box, .go_jobkorea_box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: #fff;
+  display: none;
+  z-index: 20; }
+  .go_saramin_box p, .go_jobkorea_box p {
+    height: 70px;
+    border: 1px solid #333;
+    font-size: 30px;
+    line-height: 70px;
+    cursor: pointer; }
+    .go_saramin_box p::before, .go_jobkorea_box p::before {
+      content: '\25BC'; }
+    .go_saramin_box p:hover, .go_jobkorea_box p:hover {
+      background: #ccc; }
+
 /* 커스텀 체크박스 */
 input[type=checkbox] {
   visibility: hidden;
