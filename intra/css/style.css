@@ -257,8 +257,19 @@ i.fa.fa-ban {
 
 /* 아이콘 컬러 & 컬러*/
 /* 솔루션리스트 커스텀 */
-.solution_lsit .red {
-  color: #f56954; }
+.solution_list table tbody tr td i.fa-pause:hover, .solution_list table tbody tr td i.fa-ban:hover {
+  font-weight: 600;
+  color: red; }
+.solution_list table tbody tr .prolong span {
+  display: block;
+  background: #efefef;
+  border: 1px solid red;
+  color: red;
+  cursor: pointer; }
+  .solution_list table tbody tr .prolong span::after {
+    content: ' [ 연장 ]'; }
+  .solution_list table tbody tr .prolong span:hover {
+    font-weight: 600; }
 
 /* 솔루션리스트 커스텀 */
 /* 광고주 리스트 커스텀 */

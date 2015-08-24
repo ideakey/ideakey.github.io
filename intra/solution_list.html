@@ -138,6 +138,7 @@
 
 					<!-- Your Page Content Here -->
 
+					<!-- #DEV 팀장권한 : 팀별셀렉스 박스제외 노출, 채널이상: 모두 노출, 사원 : 하기 조회영역 감춤 -->
 					<div class="row">
 						<div class="form-group col-xs-12">
 							<div class="col-xs-3">
@@ -174,73 +175,94 @@
 						</div>
 					</div>
 
+					<ul class="">
+						<li class="btn btn-info btn-sm pull-right">솔루션 신청</li>
+					</ul>
 
 						<div class="row">
 							<div class="col-xs-12">
-								<div class="boxs DataTable solution_list">
+								<div class="box DataTable solution_list">
 									<div class="box-body no-padding">
 
-								<!-- 테이블 -->
-								<table id="DataTable" class="table table-striped table-hover table-condensed">
-									<thead>
-										<tr class="bg-primary disabled">
-											<th>NO.</th>
-											<th>팀명</th>
-											<th>AE</th>
-											<th>사이트명</th>
-											<th>ID</th>
-											<th>매체</th>
-											<th>연장예정일</th>
-											<th>남은일수</th>
-											<th>신청일</th>
-											<th>기준등급</th>
-											<th>유형</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>1</td>
-											<td>1팀</td>
-											<td>김태영</td>
-											<td>움튼산부인과의원</td>
-											<td>ideakey</td>
-											<td><label class="label label-default">로거</label></td>
-											<td>9월10월</td>
-											<td class="red">5일</td>
-											<td>15-08-24</td>
-											<td><label class="label bg-yellow">C</label></td>
-											<td>일반</td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>2팀</td>
-											<td>신용철</td>
-											<td>파란소리샘</td>
-											<td>minsu09</td>
-											<td><label class="label label-default">CPC가드</label></td>
-											<td>9월20월</td>
-											<td>35일</td>
-											<td>15-08-24</td>
-											<td><label class="label bg-green">S</label></td>
-											<td>OLS</td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td>3팀</td>
-											<td>백창인</td>
-											<td>아이디어키</td>
-											<td>ideakey</td>
-											<td><label class="label label-default">HTTP</label></td>
-											<td>9월30월</td>
-											<td>84일</td>
-											<td>15-08-24</td>
-											<td><label class="label label-default">E</label></td>
-											<td>광고주결제</td>
-										</tr>
+										<!-- 테이블 -->
+										<table id="DataTable" class="table table-striped table-hover table-condensed">
+											<thead>
+												<tr class="bg-primary disabled">
+													<th>NO.</th>
+													<th>팀명</th>
+													<th>AE</th>
+													<th>사이트명</th>
+													<th>ID</th>
+													<th>매체</th>
+													<th>연장예정일</th>
+													<th>남은일수</th>
+													<th>신청일</th>
+													<th>기준등급</th>
+													<th>유형</th>
+													<th>종료</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>1팀</td>
+													<td>김태영</td>
+													<td>움튼산부인과의원</td>
+													<td>ideakey</td>
+													<td><label class="label label-default">로거</label></td>
+													<td>9월10월</td>
+													<td class="prolong"><span onclick="">5일</span></td>
+													<td>15-08-24</td>
+													<td><label class="label bg-yellow">C</label></td>
+													<td>일반</td>
+													<td><a href="" class="top-tip" data-tips="일시중지"><i class="fa fa-pause"></i></a></i> | <a href="" class="top-tip" data-tips="해지"><i class="fa fa-ban"></i></a></td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>2팀</td>
+													<td>신용철</td>
+													<td>파란소리샘</td>
+													<td>minsu09</td>
+													<td><label class="label label-default">CPC가드</label></td>
+													<td>10월20월</td>
+													<td><span href="#">35일</span></td>
+													<td>15-08-24</td>
+													<td><label class="label bg-green">S</label></td>
+													<td>OLS</td>
+													<td><a href="" class="top-tip" data-tips="일시중지"><i class="fa fa-pause"></i></a></i> | <a href="" class="top-tip" data-tips="해지"><i class="fa fa-ban"></i></a></td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>교육팀</td>
+													<td>권오득</td>
+													<td>외장하드</td>
+													<td>#</td>
+													<td><label class="label label-default">언론홍보</label></td>
+													<td>#</td>
+													<td><span href="#">#</span></td>
+													<td>15-08-24</td>
+													<td><label class="label bg-green">S</label></td>
+													<td>OLS</td>
+													<td>#</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>3팀</td>
+													<td>백창인</td>
+													<td>아이디어키</td>
+													<td>ideakey</td>
+													<td><label class="label label-default">HTTP</label></td>
+													<td>12월30월</td>
+													<td><span href="#">84일</span></td>
+													<td>15-08-24</td>
+													<td><label class="label label-default">E</label></td>
+													<td>광고주결제</td>
+													<td><a href="" class="top-tip" data-tips="일시중지"><i class="fa fa-pause"></i></a></i> | <a href="" class="top-tip" data-tips="해지"><i class="fa fa-ban"></i></a></td>
+												</tr>
 
-									</tbody>
-								</table>
-								<!-- // 테이블 -->
+											</tbody>
+										</table>
+										<!-- // 테이블 -->
 
 
 							</div><!-- /.box-body -->
