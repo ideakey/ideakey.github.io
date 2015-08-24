@@ -256,6 +256,11 @@ i.fa.fa-ban {
   background: #f6f6f6; }
 
 /* 아이콘 컬러 & 컬러*/
+/* 솔루션리스트 커스텀 */
+.solution_lsit .red {
+  color: #f56954; }
+
+/* 솔루션리스트 커스텀 */
 /* 광고주 리스트 커스텀 */
 .client_list table tbody tr td:nth-child(5), .client_list table tbody tr td:nth-child(6), .client_list table tbody tr td:nth-child(8) {
   text-align: left; }
