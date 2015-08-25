@@ -356,11 +356,15 @@ i {
     tbody {
       tr {
         td {
-          i.fa-pause, i.fa-ban {
+          i.fa-pause, i.fa-ban, .left-tip {
             &:hover {
               font-weight: 600;
               color: red;
             }
+          }
+          .left-tip {
+            font-weight: 600;
+            color: green;
           }
         }
         .prolong {
@@ -377,6 +381,8 @@ i {
             }
             &:hover {
               font-weight: 600;
+              color: white;
+              background: red;
             }
           } // span
         } // .prolong
