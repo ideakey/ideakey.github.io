@@ -8,6 +8,9 @@ body {
   border: 1px solid #333;
   box-sizing: border-box; }
 
+.none {
+  display: none; }
+
 ul, li {
   margin: 0;
   padding: 0; }
@@ -283,6 +286,8 @@ input[type=checkbox]:checked + label:before {
 
 /* 커스텀 체크박스 */
 /* 솔루션리스트 커스텀 */
+.solution_list .callout a {
+  color: inherit; }
 .solution_list .checkbox_group {
   margin-left: 20px;
   width: 230px; }
