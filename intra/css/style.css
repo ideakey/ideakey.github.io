@@ -257,6 +257,11 @@ i.fa.fa-ban {
 
 /* 아이콘 컬러 & 컬러*/
 /* 솔루션리스트 커스텀 */
+.solution_list label.chekbox {
+  cursor: pointer; }
+.solution_list .solution_level input {
+  text-align: center;
+  font-weight: 600; }
 .solution_list table tbody tr td i.fa-pause:hover, .solution_list table tbody tr td i.fa-ban:hover, .solution_list table tbody tr td .left-tip:hover {
   font-weight: 600;
   color: red; }

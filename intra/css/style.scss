@@ -352,6 +352,19 @@ i {
 
 /* 솔루션리스트 커스텀 */
 .solution_list {
+  // 체크박스용 라벨
+  label.chekbox {
+    cursor: pointer;
+  }
+  // 체크박스용 라벨
+  // 솔루션 레벨
+  .solution_level {
+    input {
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+  // 솔루션 레벨
   table {
     tbody {
       tr {
