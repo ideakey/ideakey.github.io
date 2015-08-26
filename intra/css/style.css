@@ -256,6 +256,30 @@ i.fa.fa-ban {
   background: #f6f6f6; }
 
 /* 아이콘 컬러 & 컬러*/
+/* 커스텀 체크박스 */
+input[type=checkbox] {
+  visibility: hidden;
+  display: none; }
+
+input[type=checkbox] + label:before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-top: -6px;
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px; }
+
+input[type=checkbox]:checked + label:before {
+  content: "\2714";
+  color: white;
+  background-color: #0af;
+  text-align: center;
+  line-height: 30px; }
+
+/* 커스텀 체크박스 */
 /* 솔루션리스트 커스텀 */
 .solution_list label.chekbox {
   cursor: pointer; }
@@ -332,7 +356,7 @@ table.ae td:nth-child(3) {
   width: 100px; }
 
 /* 리베이트 - 모달  텍스트 에어리어 커스텀 */
-#viewModal textarea {
+#viewModal textarea, .solution_list textarea {
   background-image: -webkit-linear-gradient(#dbf6f6, white 27px, #eee 28px, #fff 29px);
   background-image: -o-linear-gradient(#dbf6f6, white 27px, #eee 28px, #fff 29px);
   background-image: linear-gradient(#dbf6f6, white 27px, #eee 28px, #fff 29px);

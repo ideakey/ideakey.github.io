@@ -163,7 +163,7 @@
 								</div>
 								<div class="col-md-6">
 									<div class="form-group has-warning">  <!-- 광고주명을 입력하면 자동완성으로 광고주 검색 -->
-		                <label for="">광고주명을 입력하세요(OR선택)</label> &nbsp;&nbsp;<label class="chekbox"> <input type="checkbox" id=""> OLS로 진행되는 광고주 </label>
+		                <label for="">광고주명을 입력하세요(OR선택)</label>
 		                <input type="text" class="form-control" id="" placeholder="광고주명 입력">
 		              </div>
 								</div>
@@ -244,32 +244,8 @@
 													</select>
 												</div>
 											</div>
-											<div class="col-md-3">
-												<div class="form-group">
-													<label for="">담당 AE휴대전화</label> <!-- #DEV : 담당 직원이 로그인된 상태에서 담당직원의 휴대전화번호가 자동입력 -->
-													<input type="text" class="form-control" id="" placeholder="휴대폰번호를 입력하세요">
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="form-group">
-													<label for="">담당AE 유선전화</label> <!-- #DEV : 담당 직원이 로그인된 상태에서 담당직원의 휴대전화번호가 자동입력 -->
-													<input type="text" class="form-control" id="" placeholder="직통 전화번호를 입력하세요">
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="form-group">
-													<label for="">ㅁㅁㅁ</label>
-													<input type="text" class="form-control" id="" placeholder="ㅁㅁㅁ">
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="form-group">
-													<label for="">ㅁㅁㅁ</label>
-													<input type="text" class="form-control" id="" placeholder="ㅁㅁㅁ">
-												</div>
-											</div>
 
-											<div class="col-xs-6"><!-- 독립몰 정보 -->
+											<div class="col-md-6"><!-- 독립몰 정보 -->
 												<div class="box box-warning">
 													<div class="box-header with-border">
 														<h3 class="box-title">독일몰 FTP 정보</h3>
@@ -303,13 +279,13 @@
 												</div><!-- /.box -->
 											</div><!-- /.독립몰 정보 -->
 
-											<div class="col-xs-6"><!-- 임대형 정보 -->
+											<div class="col-md-6"><!-- 임대형 정보 -->
 												<div class="box box-info">
 													<div class="box-header with-border">
 														<h3 class="box-title">임대형 쇼핑몰 정보</h3>
 													</div><!-- /.box-header -->
 													<div class="box-body">
-														<div class="col-md-6">
+														<div class="col-md-12">
 															<div class="form-group">
 																<label for="">관리자 페이지 URL</label>
 																<input type="text" class="form-control" id="" placeholder="">
@@ -323,14 +299,8 @@
 														</div>
 														<div class="col-md-6">
 															<div class="form-6roup">
-																<label for="">관리자 페이지 PASSWORD</label> <!-- #DEV : 담당 직원이 로그인된 상태에서 담당직원의 휴대전화번호가 자동입력 -->
+																<label for="">관리자 페이지 PASSWORD</label>
 																<input type="text" class="form-control" id="" placeholder="">
-															</div>
-														</div>
-														<div class="col-md-6">
-															<div class="form-group">
-																<label for="">매출에 의한 예상등급</label> <!-- #DEV : 담당 직원이 로그인된 상태에서 담당직원의 휴대전화번호가 자동입력 -->
-																<input type="text" class="form-control" id="" value="" placeholder="">
 															</div>
 														</div>
 													</div><!-- /.box-body -->
@@ -375,6 +345,23 @@
 		                </div><!-- /.box-body -->
 		              </div><!-- /.box -->
 		            </div><!-- /.3개월 매출 -->
+								<div class="col-md-4">
+									<div class="form-group border">
+										<label>특이사항 체크</label>
+										
+										<input type="checkbox" id="chekbox1" name="chekbox1" value="" class="">
+          					<label for="chekbox1" class="checkbox"> 검색광고 </label>
+										<input type="checkbox" id="chekbox2" name="chekbox2" value="">
+          					<label for="chekbox2" class="checkbox"> 123123123 </label>
+
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="form-group">
+										<label>솔루션 신청 메모</label>
+										<textarea class="form-control" rows="5" placeholder="첫줄의 내용은 요약으로 노출됩니다."></textarea>
+									</div>
+								</div>
 								<div class="box-footer">
 		              <button type="submit" class="btn btn-primary"> 등록요청 </button>
 		            </div>
