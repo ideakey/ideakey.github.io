@@ -385,6 +385,9 @@ input[type=checkbox]:checked + label:before {
 
 /* 솔루션리스트 커스텀 */
 .solution_list {
+  .bg-efefef {
+    background: #efefef
+  }
   // callout 영역 링크 처리
   .callout {
     a {
