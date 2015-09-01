@@ -418,6 +418,9 @@ input[type=checkbox]:checked + label:before {
     tbody {
       tr {
         td {
+          p {
+            margin: 0;
+          }
           i.fa-pause, i.fa-ban, .left-tip {
             &:hover {
               font-weight: 600;

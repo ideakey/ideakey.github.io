@@ -298,6 +298,8 @@ input[type=checkbox]:checked + label:before {
 .solution_list .solution_level input {
   text-align: center;
   font-weight: 600; }
+.solution_list table tbody tr td p {
+  margin: 0; }
 .solution_list table tbody tr td i.fa-pause:hover, .solution_list table tbody tr td i.fa-ban:hover, .solution_list table tbody tr td .left-tip:hover {
   font-weight: 600;
   color: red; }
