@@ -286,6 +286,8 @@ input[type=checkbox]:checked + label:before {
 
 /* 커스텀 체크박스 */
 /* 솔루션리스트 커스텀 */
+.solution_list .bg-efefef {
+  background: #efefef; }
 .solution_list .callout a {
   color: inherit; }
 .solution_list .checkbox_group {
