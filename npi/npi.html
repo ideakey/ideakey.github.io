@@ -7,6 +7,7 @@
 		<title> 인트라넷 - 페이지 </title>
 		<!-- Bootstrap 3.3.4 -->
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="bootstrap/css/custom-theme.min.css" rel="stylesheet" type="text/css" />
 		<!-- Font Awesome Icons -->
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 		<!-- Ionicons -->
@@ -348,13 +349,13 @@
 				<!-- Content Header (Page header) -->
 				<section class="content-header">
 					<h1>
-						광고주 정보등록 <!-- 메인 타이틀 -->
-						<small>최초 광고주 등록 화면</small><!-- 서브 타이틀 -->
+						광고주 개인정보 활용 동의 요청 <!-- 메인 타이틀 -->
+						<small>광고주 정보 습득전 필수로 진행해야 합니다.</small><!-- 서브 타이틀 -->
 					</h1>
 					<ol class="breadcrumb">
 						<li><a href="#"><i class="fa fa-dashboard"></i>Intra</a></li>
-						<li class=""><a href="#">네이버 API</a></li>
-						<li class="active">광고주 예산 확인</li>
+						<li class=""><a href="#">광고주 개인정보</a></li>
+						<li class="active">광고주 개인정보 동의 요청</li>
 					</ol>
 				</section>
 
@@ -363,6 +364,90 @@
 
 					<!-- Your Page Content Here -->
 
+					<div class="panel panel-primary">
+						<div class="panel-heading b">광고주 정보 동의 요청 발송 하기</div>
+						<div class="panel-body">
+							<div class="form-horizontal">
+
+								<div class="col-md-6 ">
+									<label for="select" class="control-label col-md-3">정보 동의 양식</label>
+									<div class="col-md-9">
+										<select class="form-control" id="select">
+											 <option value="">선택하세요</option>
+											 <option value="">약식 요청 ( 전화통화중 급하게 처리할때 )</option>
+											 <option value="">정식 요청 ( 광고 계약이후 정식으로 처리할때 )</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="panel panel-yellowgreen">
+										<div class="panel-heading">약식 요청 필수 정보</div>
+										<div class="panel-body">
+
+											<label for="" class="control-label col-md-3">업체명</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="">
+											</div>
+											<label for="" class="control-label col-md-3">광고주명</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="">
+											</div>
+											<label for="" class="control-label col-md-3">휴대폰번호</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="">
+											</div>
+											<label for="" class="control-label col-md-3">이용목적</label>
+											<div class="col-md-9">
+												<select class="form-control" id="select">
+													 <option value="">선택하세요</option>
+													 <option value="">광고에 대한 컨설팅 목적을 위한 계정 확인</option>
+													 <option value="">블라블라블라블라</option>
+													 <option value="">블라블라블라블라</option>
+												</select>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-md-offset-6">
+									<div class="panel panel-lightcyan">
+										<div class="panel-heading">약식 요청 필수 정보</div>
+										<div class="panel-body">
+
+											<label for="" class="control-label col-md-3">업체명</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="">
+											</div>
+											<label for="" class="control-label col-md-3">광고주명</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="">
+											</div>
+											<label for="" class="control-label col-md-3">휴대폰번호</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="">
+											</div>
+											<label for="" class="control-label col-md-3">이용목적</label>
+											<div class="col-md-9">
+												<select class="form-control" id="select">
+													 <option value="">선택하세요</option>
+													 <option value="">광고에 대한 컨설팅 목적을 위한 계정 확인</option>
+													 <option value="">블라블라블라블라</option>
+													 <option value="">블라블라블라블라</option>
+												</select>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div> <!-- /.panel-body -->
+					</div>
+					<div class="alert alert-dismissible alert-warning">
+						<button type="button" class="close" data-dismiss="alert">×</button>
+						<strong>블라블라</strong> 이후 <strong>블라블라</strong> 중요합니다 블라블라!!
+					</div>
+					<button type="button" class="btn btn-primary btn-lg btn-block"">광고주 개인정보 활용 동의 요청 보내기</button>
 
 
 
