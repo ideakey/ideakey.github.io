@@ -1,0 +1,385 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+body {
+  font-family: 'Noto Sans', 'Nanum Gothic', sans-serif;
+  word-break: break-all; }
+
+.border {
+  border: 1px solid #333;
+  box-sizing: border-box; }
+
+.none {
+  display: none; }
+
+ul, li {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: inherit; }
+  a:hover {
+    color: inherit;
+    font-weight: bold; }
+
+/* ---- 기본 항목 ----------------------------- */
+/* CSS툴팁  */
+[data-tips] {
+  position: relative;
+  text-decoration: none; }
+
+[data-tips]:after,
+[data-tips]:before {
+  position: absolute;
+  z-index: 100;
+  opacity: 0; }
+
+[data-tips]:after {
+  content: attr(data-tips);
+  height: 25px;
+  line-height: 25px;
+  padding: 0 10px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  background: #222;
+  border-radius: 5px;
+  text-shadow: 0 0 5px #000;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+[data-tips]:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 6px;
+  border-style: solid; }
+
+[data-tips]:hover:after,
+[data-tips]:hover:before {
+  opacity: 1; }
+
+/* Top tips */
+[data-tips].top-tip:after,
+[data-tips].top-tip:before {
+  -webkit-transition: bottom 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  -moz-transition: bottom 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  transition: bottom 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  bottom: 90%;
+  left: -9999px;
+  margin-bottom: 12px; }
+
+[data-tips].top-tip:before {
+  border-color: #222 transparent transparent transparent;
+  margin-bottom: 0; }
+
+[data-tips].top-tip:hover:after,
+[data-tips].top-tip:hover:before {
+  bottom: 100%;
+  left: 0; }
+
+[data-tips].top-tip:hover:before {
+  left: 5px; }
+
+/* Bottom tip */
+[data-tips].bottom-tip:after,
+[data-tips].bottom-tip:before {
+  -webkit-transition: top 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  -moz-transition: top 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  transition: top 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  top: 90%;
+  left: -9999px;
+  margin-top: 12px; }
+
+[data-tips].bottom-tip:before {
+  border-color: transparent transparent #222 transparent;
+  margin-top: 0; }
+
+[data-tips].bottom-tip:hover:after,
+[data-tips].bottom-tip:hover:before {
+  top: 100%;
+  left: 0; }
+
+[data-tips].bottom-tip:hover:before {
+  left: 15px; }
+
+/* Right tip */
+[data-tips].right-tip:after,
+[data-tips].right-tip:before {
+  -webkit-transition: left 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  -moz-transition: left 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  transition: left 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  top: -9999px;
+  left: 96%;
+  margin-left: 12px; }
+
+[data-tips].right-tip:before {
+  border-color: transparent #222 transparent transparent;
+  margin-left: 0; }
+
+[data-tips].right-tip:hover:after,
+[data-tips].right-tip:hover:before {
+  left: 100%;
+  top: 0; }
+
+[data-tips].right-tip:hover:before {
+  top: 7px; }
+
+/* Left tip */
+[data-tips].left-tip:after,
+[data-tips].left-tip:before {
+  -webkit-transition: right 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  -moz-transition: right 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  transition: right 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  top: -9999px;
+  right: 96%;
+  margin-right: 12px; }
+
+[data-tips].left-tip:before {
+  border-color: transparent transparent transparent #222;
+  margin-right: 0; }
+
+[data-tips].left-tip:hover:after,
+[data-tips].left-tip:hover:before {
+  right: 100%;
+  top: 0; }
+
+[data-tips].left-tip:hover:before {
+  top: 7px; }
+
+/* CSS툴팁  */
+/* 매출용 CSS툴팁  */
+a.tooltips {
+  position: relative;
+  display: inline;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease; }
+
+a.tooltips span {
+  position: absolute;
+  width: 160px;
+  color: #FFFFFF;
+  background: #000000;
+  visibility: hidden;
+  text-align: left;
+  padding: 5px;
+  border-radius: 4px; }
+
+a.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid #000000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent; }
+
+a:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.8;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -76px;
+  z-index: 999; }
+
+/* 매출용 CSS툴팁  */
+/* 차트 관련 CSS */
+.chart i.color1 {
+  color: #038CB8; }
+.chart i.color2 {
+  color: #D1D6DE; }
+.chart span {
+  font-size: 11px;
+  color: #999; }
+
+/* // 차트 관련 CSS */
+/* 페이지 가로로 길경우에 대한 경우 */
+div.ofx {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 15px;
+  width: 100%; }
+  div.ofx table {
+    /* width: 100% !important  */ }
+    div.ofx table th, div.ofx table td {
+      white-space: nowrap; }
+  div.ofx .DataTables_filter_box,
+  div.ofx .DataTable_length_box {
+    bottom: 15px; }
+
+/* 데이터 테이블 관련 */
+.DataTable {
+  position: relative; }
+  .DataTable .col-xs-12 {
+    margin-top: -6px; }
+  .DataTable .DataTable_length_box {
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+    z-index: 1; }
+    .DataTable .DataTable_length_box .input-sm {
+      width: 70px;
+      text-align: center; }
+  .DataTable .DataTables_filter_box {
+    position: absolute;
+    bottom: 2px;
+    right: 130px;
+    z-index: 1; }
+  .DataTable .dataTables_paginate {
+    text-align: left;
+    margin: 5px 0 -2px 5px; }
+  .DataTable table th, .DataTable table td {
+    text-align: center; }
+  .DataTable span.star {
+    display: none; }
+
+/* 아이콘 컬러 & 컬러*/
+i.red {
+  color: #f56954; }
+i.fa.fa-star {
+  cursor: pointer;
+  color: #39CCCC; }
+i.fa.fa-star-o {
+  cursor: pointer;
+  color: #aaa; }
+i.fa.fa-check-circle-o {
+  color: green; }
+i.fa.fa-ban {
+  color: #aaa; }
+
+.info-box {
+  background: #f6f6f6; }
+
+/* 아이콘 컬러 & 컬러*/
+/* 커스텀 체크박스 */
+input[type=checkbox] {
+  visibility: hidden;
+  display: none; }
+
+input[type=checkbox] + label {
+  cursor: pointer; }
+
+input[type=checkbox] + label:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px; }
+
+input[type=checkbox]:checked + label:before {
+  content: "\2714";
+  color: white;
+  background-color: #0af;
+  text-align: center;
+  line-height: 18px; }
+
+/* 커스텀 체크박스 */
+/* 솔루션리스트 커스텀 */
+.solution_list .bg-efefef {
+  background: #efefef; }
+.solution_list .callout a {
+  color: inherit; }
+.solution_list .checkbox_group {
+  margin-left: 20px;
+  width: 230px; }
+.solution_list label.chekbox {
+  cursor: pointer; }
+.solution_list .solution_level input {
+  text-align: center;
+  font-weight: 600; }
+.solution_list table tbody tr td p {
+  margin: 0; }
+.solution_list table tbody tr td i.fa-pause:hover, .solution_list table tbody tr td i.fa-ban:hover, .solution_list table tbody tr td .left-tip:hover {
+  font-weight: 600;
+  color: red; }
+.solution_list table tbody tr td .left-tip {
+  font-weight: 600;
+  color: green; }
+.solution_list table tbody tr .prolong span {
+  display: block;
+  background: #efefef;
+  border: 1px solid red;
+  color: red;
+  cursor: pointer; }
+  .solution_list table tbody tr .prolong span::after {
+    content: ' [ 연장 ]'; }
+  .solution_list table tbody tr .prolong span:hover {
+    font-weight: 600;
+    color: white;
+    background: red; }
+
+/* 솔루션리스트 커스텀 */
+/* 광고주 리스트 커스텀 */
+.client_list table tbody tr td:nth-child(5), .client_list table tbody tr td:nth-child(6), .client_list table tbody tr td:nth-child(8) {
+  text-align: left; }
+.client_list table tbody tr td:nth-child(4) {
+  width: 20px; }
+.client_list table tbody tr td:nth-child(7) {
+  text-align: right;
+  padding-right: 10px; }
+
+/* 권한별 리스트 뷰 CSS */
+table.tl th:nth-child(2),
+table.tl td:nth-child(2) {
+  display: none; }
+table.ae th:nth-child(2), table.ae th:nth-child(3),
+table.ae td:nth-child(2),
+table.ae td:nth-child(3) {
+  display: none; }
+
+/* 권한별 리스트 뷰 CSS */
+/* 위임 리스트 커스텀 */
+.delegation_list table tbody tr td:nth-child(4), .delegation_list table tbody tr td:nth-child(7) {
+  text-align: left; }
+.delegation_list table tbody tr td:nth-child(9) {
+  text-align: right; }
+.delegation_list table tbody tr td label {
+  font-weight: 400; }
+
+/* 세금계산서 발행 리스트 커스텀 */
+.invoice_list table tbody td:nth-child(3) {
+  white-space: nowrap; }
+.invoice_list table tbody td:nth-child(4), .invoice_list table tbody td:nth-child(5) {
+  text-align: left; }
+.invoice_list table tbody td:nth-child(9), .invoice_list table tbody td:nth-child(10) {
+  text-align: right; }
+.invoice_list table tbody td input[type="text"] {
+  display: none;
+  text-align: right;
+  width: 100px;
+  border: 1px solid #aaa;
+  font-weight: 400; }
+
+/* 리베이트 현황 리스트 커스텀 */
+.rebate_list table tbody tr td:nth-child(4) {
+  text-align: left; }
+.rebate_list table tbody tr td:nth-child(8), .rebate_list table tbody tr td:nth-child(10) {
+  text-align: right; }
+.rebate_list table tbody tr td:nth-child(10) {
+  width: 100px; }
+
+/* 리베이트 - 모달  텍스트 에어리어 커스텀 */
+#viewModal textarea, .solution_list textarea {
+  background-image: -webkit-linear-gradient(#dbf6f6, white 27px, #eee 28px, #fff 29px);
+  background-image: -o-linear-gradient(#dbf6f6, white 27px, #eee 28px, #fff 29px);
+  background-image: linear-gradient(#dbf6f6, white 27px, #eee 28px, #fff 29px);
+  font-size: 14px;
+  line-height: 20px; }
+
+/* 리베이트 현황 리스트 커스텀 */
+/* 공지사항 리스트 커스텀 */
+.notice_list table tbody tr td:nth-child(3), .notice_list table tbody tr td:nth-child(4) {
+  text-align: left; }
+
+/* */
