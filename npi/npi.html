@@ -16,6 +16,7 @@
 		<link href="dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
 		<link href="dist/css/skins/skin-blue.min.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="dist/css/sweetalert.css">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -374,19 +375,20 @@
 									<div class="col-md-9">
 										<select class="form-control" id="select">
 											 <option value="">선택하세요</option>
-											 <option value="">약식 요청 ( 전화통화중 급하게 처리할때 )</option>
-											 <option value="">정식 요청 ( 광고 계약이후 정식으로 처리할때 )</option>
+											 <option value="">단순 컨설팅 ( 전화통화중 급하게 처리할때 )</option>
+											 <option value="">정식 광고 관리 ( 광고 계약이후 정식으로 처리할때 )</option>
+											 <option value="">재무 처리 ( 광고 계약 종료 후 남은 재무 처리할때 )</option>
 										</select>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="panel panel-yellowgreen">
-										<div class="panel-heading">약식 요청 필수 정보</div>
+										<div class="panel-heading">단순 컨설팅용 정도 동의 요청</div>
 										<div class="panel-body">
 
 											<label for="" class="control-label col-md-3">업체명</label>
 											<div class="col-md-9">
-												<input type="text" class="form-control" id="">
+												<input type="text" class="form-control" id="" placeholder="광고주명을 직접 적거나 선택하는 스타일로 개발될 예정">
 											</div>
 											<label for="" class="control-label col-md-3">광고주명</label>
 											<div class="col-md-9">
@@ -398,12 +400,7 @@
 											</div>
 											<label for="" class="control-label col-md-3">이용목적</label>
 											<div class="col-md-9">
-												<select class="form-control" id="select">
-													 <option value="">선택하세요</option>
-													 <option value="">광고에 대한 컨설팅 목적을 위한 계정 확인</option>
-													 <option value="">블라블라블라블라</option>
-													 <option value="">블라블라블라블라</option>
-												</select>
+												<input type="text" class="form-control" id="" value="광고 계약전 컨설팅을 위한 목적으로만 진행되는 광고주 정보 동의 입니다.">
 											</div>
 
 										</div>
@@ -411,29 +408,49 @@
 								</div>
 								<div class="col-md-6 col-md-offset-6">
 									<div class="panel panel-lightcyan">
-										<div class="panel-heading">약식 요청 필수 정보</div>
+										<div class="panel-heading">정식 광고 관리용 정보 동의 요청</div>
 										<div class="panel-body">
 
 											<label for="" class="control-label col-md-3">업체명</label>
 											<div class="col-md-9">
-												<input type="text" class="form-control" id="">
+												<input type="text" class="form-control" id="" value="선택하거나 쉽게 입력할수 있는 방법 고민중">
 											</div>
 											<label for="" class="control-label col-md-3">광고주명</label>
 											<div class="col-md-9">
-												<input type="text" class="form-control" id="">
+												<input type="text" class="form-control" id="" value="광고주 선택시 자동입력됨 : 안정윤">
 											</div>
 											<label for="" class="control-label col-md-3">휴대폰번호</label>
 											<div class="col-md-9">
-												<input type="text" class="form-control" id="">
+												<input type="text" class="form-control" id="" value="010-0000-0000">
 											</div>
-											<label for="" class="control-label col-md-3">이용목적</label>
+											<label for="" class="control-label col-md-3">E-mail</label>
 											<div class="col-md-9">
-												<select class="form-control" id="select">
-													 <option value="">선택하세요</option>
-													 <option value="">광고에 대한 컨설팅 목적을 위한 계정 확인</option>
-													 <option value="">블라블라블라블라</option>
-													 <option value="">블라블라블라블라</option>
-												</select>
+												<input type="text" class="form-control" id="" value="ideakey@ideakey.co.kr">
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-md-offset-6">
+									<div class="panel panel-danger">
+										<div class="panel-heading">재무 처리용 정보 동의 요청</div>
+										<div class="panel-body">
+
+											<label for="" class="control-label col-md-3">업체명</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="" value="선택하거나 쉽게 입력할수 있는 방법 고민중">
+											</div>
+											<label for="" class="control-label col-md-3">광고주명</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="" value="광고주 선택시 자동입력됨 : 안정윤">
+											</div>
+											<label for="" class="control-label col-md-3">휴대폰번호</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="" value="010-0000-0000">
+											</div>
+											<label for="" class="control-label col-md-3">E-mail</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="" value="ideakey@ideakey.co.kr">
 											</div>
 
 										</div>
@@ -447,7 +464,7 @@
 						<button type="button" class="close" data-dismiss="alert">×</button>
 						<strong>블라블라</strong> 이후 <strong>블라블라</strong> 중요합니다 블라블라!!
 					</div>
-					<button type="button" class="btn btn-primary btn-lg btn-block"">광고주 개인정보 활용 동의 요청 보내기</button>
+					<button type="button" class="btn btn-primary btn-lg btn-block" id="okok">광고주 개인정보 활용 동의 요청 보내기</button>
 
 
 
@@ -498,10 +515,11 @@
 		<script src="dist/js/app.min.js" type="text/javascript"></script>
 		<!-- Lstyle -->
 		<script src="plugins/Lstyle.min.js"></script>
-
-		<!-- Optionally, you can add Slimscroll and FastClick plugins.
-					Both of these plugins are recommended to enhance the
-					user experience. Slimscroll is required when using the
-					fixed layout. -->
+		<script src="dist/js/sweetalert-dev.js"></script>
+		<script>
+		$("#okok").click(function(){
+			swal("성공!", "광고주님의 휴대폰과 메일로 정보동의 요청이 발송되었습니다.", "success")
+		})
+		</script>
 	</body>
 </html>
