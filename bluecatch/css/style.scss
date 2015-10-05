@@ -1,0 +1,84 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+body {
+    font-family: 'Noto Sans', 'Nanum Gothic', sans-serif;
+    word-break: break-all;
+}
+
+
+.border {
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  &:hover {
+    color: inherit;
+    font-weight: bold;
+  }
+}
+
+
+/* ---- 기본 항목 ----------------------------- */
+
+
+/* 차트 관련 CSS */
+.chart {
+  i.color1 {
+    color: #038CB8;
+  }
+  i.color2 {
+    color: #D1D6DE;
+  }
+  i.color3 {
+    color: #FE9B2F;
+  }
+
+  span {
+    font-size: 11px;
+    color: #999;
+  }
+}
+
+/* // 차트 관련 CSS */
+
+/* 아이콘 색 */
+i.color3 {
+  color: #FE9B2F;
+}
+
+
+
+
+// 광고주명 코드, 로그아웃 내용 나오는곳
+.user-panel {
+  height: 70px;
+  color: #fff;
+}
+// 광고주명 코드, 로그아웃 내용 나오는곳
+
+/* 푸시 메세지 발송 이미지 미리보기 */
+blockquote {
+  margin-bottom: 0;
+  img {
+    width: 85%;
+  }
+}
+/* 푸시 메세지 발송 이미지 미리보기 */
+
+/* 푸시 공지사항 속 이미지 사이즈 */
+.push_sample {
+  img {
+    width: 100%;
+    border: 0;
+  }
+}
+/* 푸시 공지사항 속 이미지 사이즈 */
+
+
+/* sass */
