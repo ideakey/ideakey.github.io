@@ -54,14 +54,23 @@ blockquote {
 /* 푸시 공지사항 속 이미지 사이즈 */
 /* 가입자 트래킹 표 부분 */
 .join_box {
-  height: 230px;
+  height: 400px;
   overflow: scroll;
   box-sizing: border-box;
   border-bottom: 10px solid #fff; }
+  .join_box .pager {
+    margin: 20px, 0, 0, 0; }
 
 .join_tracking tr th {
   text-align: center; }
 .join_tracking tr td {
   text-align: center; }
+
+.join_tracking2 tr th {
+  text-align: center; }
+.join_tracking2 tr td {
+  text-align: center; }
+  .join_tracking2 tr td:nth-child(3) {
+    width: 200px; }
 
 /* sass */

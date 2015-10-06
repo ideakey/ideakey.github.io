@@ -82,11 +82,13 @@ blockquote {
 
 /* 가입자 트래킹 표 부분 */
 .join_box {
-  height: 230px;
+  height: 400px;
   overflow: scroll;
   box-sizing: border-box;
   border-bottom: 10px solid #fff;
-
+  .pager {
+    margin: 20px, 0, 0, 0;
+  }
 }
 .join_tracking {
   tr {
@@ -95,6 +97,20 @@ blockquote {
     }
     td {
       text-align: center;
+    }
+  }
+}
+.join_tracking2 {
+  tr {
+    th {
+      text-align: center;
+    }
+    td {
+      text-align: center;
+      &:nth-child(3) {
+        width: 200px;
+        // border: 1px solid #333;
+      }
     }
   }
 }
