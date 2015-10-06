@@ -80,5 +80,24 @@ blockquote {
 }
 /* 푸시 공지사항 속 이미지 사이즈 */
 
+/* 가입자 트래킹 표 부분 */
+.join_box {
+  height: 230px;
+  overflow: scroll;
+  box-sizing: border-box;
+  border-bottom: 10px solid #fff;
+
+}
+.join_tracking {
+  tr {
+    th {
+      text-align: center;
+    }
+    td {
+      text-align: center;
+    }
+  }
+}
+
 
 /* sass */
