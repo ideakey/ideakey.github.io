@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none; }
+
+body {
+  font-family: 'Noto Sans', 'Nanum Gothic', sans-serif;
+  font-size: 100%;
+  word-break: break-all; }
+
+.box {
+  border: 1px solid #333;
+  box-sizing: border-box; }
+
+/*리누 기본 CSS*/
+.iframe_box {
+  position: relative;
+  width: 470px;
+  height: 570px;
+  overflow: hidden; }
+  .iframe_box iframe {
+    position: absolute;
+    left: -35px;
+    top: -160px; }
+
+.iframe_box2 {
+  position: relative;
+  border-top: 2px solid #eee;
+  width: 470px;
+  height: 280px;
+  overflow: hidden; }
+  .iframe_box2 iframe {
+    position: absolute;
+    left: -35px;
+    top: -160px; }
+
+/* */
