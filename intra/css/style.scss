@@ -353,32 +353,32 @@ i {
 }
 /* 아이콘 컬러 & 컬러*/
 /* 커스텀 체크박스 */
-input[type=checkbox] {
-	visibility: hidden;
-	display: none;
-}
-input[type=checkbox] + label {
-	// border: 1px solid #333; //디버킹시 사용
-  cursor: pointer;
-}
-input[type=checkbox] + label:before {
-    content:'';
-		display: inline-block;
-		width: 20px;
-		height: 20px;
-		vertical-align: middle;
-		// margin-top: -6px;
-		background: #fff;
-		border: 1px solid #aaa;
-		border-radius: 5px;
-}
-input[type=checkbox]:checked + label:before {
-    content:"\2714";
-    color:white;
-    background-color: #0af;
-    text-align:center;
-    line-height:18px;
-}
+// input[type=checkbox] {
+// 	visibility: hidden;
+// 	display: none;
+// }
+// input[type=checkbox] + label {
+// 	// border: 1px solid #333; //디버킹시 사용
+//   cursor: pointer;
+// }
+// input[type=checkbox] + label:before {
+//     content:'';
+// 		display: inline-block;
+// 		width: 20px;
+// 		height: 20px;
+// 		vertical-align: middle;
+// 		// margin-top: -6px;
+// 		background: #fff;
+// 		border: 1px solid #aaa;
+// 		border-radius: 5px;
+// }
+// input[type=checkbox]:checked + label:before {
+//     content:"\2714";
+//     color:white;
+//     background-color: #0af;
+//     text-align:center;
+//     line-height:18px;
+// }
 /* 커스텀 체크박스 */
 
 

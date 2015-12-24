@@ -259,32 +259,8 @@ i.fa.fa-ban {
   background: #f6f6f6; }
 
 /* 아이콘 컬러 & 컬러*/
-/* 커스텀 체크박스 *
-input[type=checkbox] {
-  visibility: hidden;
-  display: none; }
-
-input[type=checkbox] + label {
-  cursor: pointer; }
-
-input[type=checkbox] + label:before {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  background: #fff;
-  border: 1px solid #aaa;
-  border-radius: 5px; }
-
-input[type=checkbox]:checked + label:before {
-  content: "\2714";
-  color: white;
-  background-color: #0af;
-  text-align: center;
-  line-height: 18px; }
-
-* 커스텀 체크박스 */
+/* 커스텀 체크박스 */
+/* 커스텀 체크박스 */
 /* 솔루션리스트 커스텀 */
 .solution_list .bg-efefef {
   background: #efefef; }
@@ -381,8 +357,5 @@ table.ae td:nth-child(3) {
 /* 공지사항 리스트 커스텀 */
 .notice_list table tbody tr td:nth-child(3), .notice_list table tbody tr td:nth-child(4) {
   text-align: left; }
-
-
-
 
 /* */
